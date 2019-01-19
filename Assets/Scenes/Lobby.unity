@@ -127,8 +127,8 @@ GameObject:
   - component: {fileID: 52194395}
   - component: {fileID: 52194394}
   m_Layer: 0
-  m_Name: NPC
-  m_TagString: Untagged
+  m_Name: Receptionist
+  m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -352,6 +352,18 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 1536191313902328, guid: 6ee67f40e73cbc449ad690701793e7c5, type: 2}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 1313556845071652, guid: 6ee67f40e73cbc449ad690701793e7c5, type: 2}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 1985306679733846, guid: 6ee67f40e73cbc449ad690701793e7c5, type: 2}
+      propertyPath: m_TagString
+      value: MainCamera
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6ee67f40e73cbc449ad690701793e7c5, type: 2}
   m_IsPrefabAsset: 0
@@ -393,6 +405,36 @@ Prefab:
     - target: {fileID: 4943503462985472, guid: 91091ecc0f682fb40a117a02645dd490, type: 2}
       propertyPath: m_RootOrder
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114255339580479586, guid: 91091ecc0f682fb40a117a02645dd490,
+        type: 2}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 995122044}
+    - target: {fileID: 114255339580479586, guid: 91091ecc0f682fb40a117a02645dd490,
+        type: 2}
+      propertyPath: door
+      value: 
+      objectReference: {fileID: 2128497721}
+    - target: {fileID: 114255339580479586, guid: 91091ecc0f682fb40a117a02645dd490,
+        type: 2}
+      propertyPath: openDoor
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 135506179895008496, guid: 91091ecc0f682fb40a117a02645dd490,
+        type: 2}
+      propertyPath: m_Radius
+      value: 16.523142
+      objectReference: {fileID: 0}
+    - target: {fileID: 135506179895008496, guid: 91091ecc0f682fb40a117a02645dd490,
+        type: 2}
+      propertyPath: m_Center.x
+      value: -0.26031074
+      objectReference: {fileID: 0}
+    - target: {fileID: 135506179895008496, guid: 91091ecc0f682fb40a117a02645dd490,
+        type: 2}
+      propertyPath: m_Center.y
+      value: 29.269556
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91091ecc0f682fb40a117a02645dd490, type: 2}
@@ -723,6 +765,24 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7b870083fc425f540acc5bec9359bbbe, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &995122044 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1313556845071652, guid: 6ee67f40e73cbc449ad690701793e7c5,
+    type: 2}
+  m_PrefabInternal: {fileID: 372686011}
+--- !u!114 &995122045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 995122044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 323449ed776b32d479e39ee1896e95c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentInterObj: {fileID: 0}
+  currentInterObjScript: {fileID: 0}
 --- !u!4 &1120801207 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4004295574303946, guid: 7b870083fc425f540acc5bec9359bbbe,
@@ -742,7 +802,7 @@ GameObject:
   - component: {fileID: 1416686742}
   - component: {fileID: 1416686743}
   m_Layer: 0
-  m_Name: TempPlayer
+  m_Name: NPC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1002,3 +1062,8 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 10.000005, y: 1.9157028, z: 10}
   m_Center: {x: 0, y: -0.9578514, z: 0}
+--- !u!1 &2128497721 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1130637926282774, guid: 91091ecc0f682fb40a117a02645dd490,
+    type: 2}
+  m_PrefabInternal: {fileID: 598903680}

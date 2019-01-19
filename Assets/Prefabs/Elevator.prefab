@@ -228,10 +228,11 @@ GameObject:
   - component: {fileID: 4479494760019588}
   - component: {fileID: 33062602879904450}
   - component: {fileID: 23691881256248044}
-  - component: {fileID: 136023823317277354}
+  - component: {fileID: 135506179895008496}
+  - component: {fileID: 114255339580479586}
   m_Layer: 0
   m_Name: ElevatorButton
-  m_TagString: Untagged
+  m_TagString: Interactable Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -945,16 +946,34 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!136 &136023823317277354
-CapsuleCollider:
+--- !u!114 &114255339580479586
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1921657958224552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d44668dad10fb24ab615b5485a8e78a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextLevel: 0
+  talks: 0
+  canInteract: 0
+  hasTutorial: 0
+  isEnd: 0
+  tutorialMessage: 
+  message: 
+  Player: {fileID: 0}
+--- !u!135 &135506179895008496
+SphereCollider:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1921657958224552}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+  serializedVersion: 2
+  m_Radius: 9.211283
+  m_Center: {x: 0.08426367, y: 29.287682, z: 0}

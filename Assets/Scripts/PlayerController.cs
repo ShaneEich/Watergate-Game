@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
 
     Rigidbody rb;
     Vector3 moveDirection;
-   // var camera = Camera.main;
+    // var camera = Camera.main;
 
     private void Awake()
     {
@@ -39,9 +39,6 @@ public class PlayerController : MonoBehaviour
     void FixedUpdate()
     {
         Move();
-        
+
     }
-
-
- 
 }
