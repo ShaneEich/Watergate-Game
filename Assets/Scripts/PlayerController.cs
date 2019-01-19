@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
 
     Rigidbody rb;
     Vector3 moveDirection;
+   // var camera = Camera.main;
 
     private void Awake()
     {
@@ -26,6 +27,7 @@ public class PlayerController : MonoBehaviour
     {
         float horizontalMovement = Input.GetAxisRaw("Horizontal");
         float verticalMovement = Input.GetAxisRaw("Vertical");
+
         moveDirection = (horizontalMovement * transform.right + verticalMovement * transform.forward).normalized;
     }
 
@@ -37,5 +39,9 @@ public class PlayerController : MonoBehaviour
     void FixedUpdate()
     {
         Move();
+        
     }
+
+
+ 
 }

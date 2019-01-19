@@ -2,8 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CameraController : MonoBehaviour
-{
+public class CameraController : MonoBehaviour {
 
     public float minimumX = -60f;
     public float maximumX = 60f;
@@ -18,41 +17,41 @@ public class CameraController : MonoBehaviour
     float rotationX = 0f;
     float rotationY = 0f;
 
-    Vector3 offset;
-
     public GameObject player;
-
-
+    private Vector3 offset;
+    //public Transform playerPosition;
+    //public Transform cameraPosition;
 
     // Use this for initialization
-    void Start()
-    {
+    void Start () {
         Cursor.lockState = CursorLockMode.Locked;
-
         offset = transform.position - player.transform.position;
+        //  offset = cameraPosition - playerPosition;
 
-        if (Input.GetKey(KeyCode.Escape))
-        {
-            Cursor.lockState = CursorLockMode.None;
-            Cursor.visible = true;
-        }
+            if (Input.GetKey(KeyCode.Escape))
+            {
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
+            }
+  	}
+	
+	// Update is called once per frame
+	void Update () {
+
+            rotationY += Input.GetAxis("Mouse X") * sensitivityY;
+            rotationX += Input.GetAxis("Mouse Y") * sensitivityX;
+
+            rotationX = Mathf.Clamp(rotationX, minimumX, maximumX);
+
+            transform.localEulerAngles = new Vector3(0, rotationY, 0);
+
+            cam.transform.localEulerAngles = new Vector3(-rotationX, rotationY, 0);
+            player.transform.localEulerAngles = new Vector3(-rotationX, rotationY, 0);
     }
 
-    // Update is called once per frame
-    void Update()
+    private void LateUpdate()
     {
-        rotationY += Input.GetAxis("Mouse X") * sensitivityY;
-        rotationX += Input.GetAxis("Mouse Y") * sensitivityX;
 
-        rotationX = Mathf.Clamp(rotationX, minimumX, maximumX);
-
-        transform.localEulerAngles = new Vector3(0, rotationY, 0);
-        cam.transform.localEulerAngles = new Vector3(-rotationX, rotationY, 0);
-        player.transform.localEulerAngles = new Vector3(-rotationX, rotationY, 0);
-    }
-
-    void LateUpdate()
-    {
         transform.position = player.transform.position + offset;
     }
 }
