@@ -22,9 +22,11 @@ GameObject:
   - component: {fileID: 54277887666978046}
   - component: {fileID: 136667109298386384}
   - component: {fileID: 114041288812667644}
-  m_Layer: 0
+  - component: {fileID: 65167109094761744}
+  - component: {fileID: 114063293983358858}
+  m_Layer: 9
   m_Name: PlayerCollider
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37,9 +39,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4226164739192820}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -55,7 +57,7 @@ GameObject:
   - component: {fileID: 20966184995083566}
   - component: {fileID: 81574166966122622}
   - component: {fileID: 114244634311006230}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -158,6 +160,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 116
   m_CollisionDetection: 1
+--- !u!65 &65167109094761744
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1313556845071652}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1.3997688, z: 1}
+  m_Center: {x: 0, y: 0.73818386, z: 0}
 --- !u!81 &81574166966122622
 AudioListener:
   m_ObjectHideFlags: 1
@@ -177,6 +191,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   walkSpeed: 250
+  topCollider: {fileID: 65167109094761744}
+--- !u!114 &114063293983358858
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1313556845071652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 323449ed776b32d479e39ee1896e95c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentInterObj: {fileID: 0}
+  currentInterObjScript: {fileID: 0}
 --- !u!114 &114244634311006230
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -205,7 +233,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.6316658
-  m_Height: 3
+  m_Radius: 0.5516421
+  m_Height: 1.909633
   m_Direction: 1
-  m_Center: {x: 0.36833417, y: 0, z: 0}
+  m_Center: {x: 0, y: -0.5307066, z: 0}
