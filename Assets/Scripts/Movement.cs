@@ -8,7 +8,7 @@ public class Movement : MonoBehaviour
     private bool facingRight = false;
     private float flip;
 
-    private Vector2 direction;
+    private Vector3 direction;
 
     // Update is called once per frame
     void Update()
@@ -37,7 +37,7 @@ public class Movement : MonoBehaviour
     void FlipPlayer()
     {
         facingRight = !facingRight;
-        Vector2 localScale = gameObject.transform.localScale;
+        Vector3 localScale = gameObject.transform.localScale;
         localScale.x *= -1;
         transform.localScale = localScale;
     }
@@ -45,46 +45,46 @@ public class Movement : MonoBehaviour
 
     private void UserInput()
     {
-        direction = Vector2.zero;
+        direction = Vector3.zero;
 
         //up inputs
         if (Input.GetKey(KeyCode.UpArrow))
         {
-            direction += Vector2.up;
+            direction += Vector3.up;
         }
         if (Input.GetKey(KeyCode.W))
         {
-            direction += Vector2.up;
+            direction += Vector3.up;
         }
 
         //down inputs
         if (Input.GetKey(KeyCode.DownArrow))
         {
-            direction += Vector2.down;
+            direction += Vector3.down;
         }
         if (Input.GetKey(KeyCode.S))
         {
-            direction += Vector2.down;
+            direction += Vector3.down;
         }
 
         //left inputs
         if (Input.GetKey(KeyCode.LeftArrow))
         {
-            direction += Vector2.left;
+            direction += Vector3.left;
         }
         if (Input.GetKey(KeyCode.A))
         {
-            direction += Vector2.left;
+            direction += Vector3.left;
         }
 
         //right inputs
         if (Input.GetKey(KeyCode.RightArrow))
         {
-            direction += Vector2.right;
+            direction += Vector3.right;
         }
         if (Input.GetKey(KeyCode.D))
         {
-            direction += Vector2.right;
+            direction += Vector3.right;
         }
     }
 }
