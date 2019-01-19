@@ -3252,35 +3252,19 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 4544751804706942, guid: 8ad2edf6a12b84747be38de1c171394e, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -90
-      objectReference: {fileID: 0}
+    - target: {fileID: 114607099368577752, guid: 8ad2edf6a12b84747be38de1c171394e,
+        type: 2}
+      propertyPath: path.Array.data[0]
+      value: 
+      objectReference: {fileID: 1238196531}
+    - target: {fileID: 114607099368577752, guid: 8ad2edf6a12b84747be38de1c171394e,
+        type: 2}
+      propertyPath: path.Array.data[1]
+      value: 
+      objectReference: {fileID: 1775772545}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8ad2edf6a12b84747be38de1c171394e, type: 2}
   m_IsPrefabAsset: 0
---- !u!1 &994045211 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1238298682655984, guid: 8ad2edf6a12b84747be38de1c171394e,
-    type: 2}
-  m_PrefabInternal: {fileID: 994045210}
---- !u!114 &994045212
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 994045211}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8be38d59b27be474ab1687b514ebda77, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  path:
-  - {fileID: 1238196531}
-  - {fileID: 1775772545}
-  speed: 0.5
-  reachDistance: 1
-  currentPoint: 0
 --- !u!4 &1012902865 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4222669995807660, guid: c9e8c92ac908907499522e06386a357a,
