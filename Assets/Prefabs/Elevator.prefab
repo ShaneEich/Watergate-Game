@@ -1034,12 +1034,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   openDoor: 0
   closeDoor: 1
-  talks: 0
+  hasKey: 0
   canInteract: 0
-  tutorialMessage: 
-  message: 
   Player: {fileID: 0}
   door: {fileID: 1130637926282774}
+  keyCard: {fileID: 0}
 --- !u!114 &114294728961657556
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1053,12 +1052,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   openDoor: 1
   closeDoor: 0
-  talks: 0
+  hasKey: 0
   canInteract: 0
-  tutorialMessage: 
-  message: 
   Player: {fileID: 0}
   door: {fileID: 1130637926282774}
+  keyCard: {fileID: 0}
 --- !u!135 &135506179895008496
 SphereCollider:
   m_ObjectHideFlags: 1
