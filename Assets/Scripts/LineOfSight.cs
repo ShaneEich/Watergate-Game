@@ -16,10 +16,18 @@ public class LineOfSight : MonoBehaviour {
         if (CanSeePlayer(player))
         {
             mesh.material.color = Color.red;
+            transform.LookAt(player.transform, player.transform.up);
         }
         else
         {
-            mesh.material.color = Color.blue;
+            if (tag.Equals("KeyGuard"))
+            {
+                mesh.material.color = Color.green;
+            }
+            else
+            {
+                mesh.material.color = Color.blue;
+            }
         }
     }
 
