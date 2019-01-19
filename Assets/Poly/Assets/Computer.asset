@@ -9,7 +9,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 33a7a203f9e09e74e9c082121e4f44c1, type: 3}
-  m_Name: Simple_computer_Robert_Schlyter_doMMnviJrGi
+  m_Name: Computer
   m_EditorClassIdentifier: 
   assetPrefab: {fileID: 1033664838152392, guid: 6c84610a600ee1c4f92c0676910450c0,
     type: 2}

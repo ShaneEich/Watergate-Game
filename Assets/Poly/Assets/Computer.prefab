@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4678150592274234}
   - component: {fileID: 114708344857896680}
   m_Layer: 0
-  m_Name: Simple_computer_Robert_Schlyter_doMMnviJrGi
+  m_Name: Computer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
