@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class ObjectInteract : MonoBehaviour {
 
-    public bool openDoor; 
+    public bool openDoor;
+    public bool closeDoor;
     public bool talks;
     public bool canInteract;
     public string tutorialMessage;
@@ -27,5 +28,10 @@ public class ObjectInteract : MonoBehaviour {
     public void open()
     {
         door.SetActive(false);
+    }
+
+    public void close()
+    {
+        door.SetActive(true);
     }
 }

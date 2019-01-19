@@ -423,31 +423,11 @@ Prefab:
       propertyPath: Player
       value: 
       objectReference: {fileID: 995122044}
-    - target: {fileID: 114255339580479586, guid: 91091ecc0f682fb40a117a02645dd490,
+    - target: {fileID: 114294728961657556, guid: 91091ecc0f682fb40a117a02645dd490,
         type: 2}
-      propertyPath: door
+      propertyPath: Player
       value: 
-      objectReference: {fileID: 2128497721}
-    - target: {fileID: 114255339580479586, guid: 91091ecc0f682fb40a117a02645dd490,
-        type: 2}
-      propertyPath: openDoor
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 135506179895008496, guid: 91091ecc0f682fb40a117a02645dd490,
-        type: 2}
-      propertyPath: m_Radius
-      value: 16.523142
-      objectReference: {fileID: 0}
-    - target: {fileID: 135506179895008496, guid: 91091ecc0f682fb40a117a02645dd490,
-        type: 2}
-      propertyPath: m_Center.x
-      value: -0.26031074
-      objectReference: {fileID: 0}
-    - target: {fileID: 135506179895008496, guid: 91091ecc0f682fb40a117a02645dd490,
-        type: 2}
-      propertyPath: m_Center.y
-      value: 29.269556
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 995122044}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91091ecc0f682fb40a117a02645dd490, type: 2}
   m_IsPrefabAsset: 0
@@ -1074,8 +1054,3 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 10.000005, y: 1.9157028, z: 10}
   m_Center: {x: 0, y: -0.9578514, z: 0}
---- !u!1 &2128497721 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1130637926282774, guid: 91091ecc0f682fb40a117a02645dd490,
-    type: 2}
-  m_PrefabInternal: {fileID: 598903680}

@@ -17,6 +17,10 @@ public class PlayerInteract : MonoBehaviour {
                 currentInterObjScript.open();
             }
 
+            if (currentInterObjScript.closeDoor)
+            {
+                currentInterObjScript.close();
+            }
         }
 
     }
