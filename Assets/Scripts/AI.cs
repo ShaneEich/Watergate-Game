@@ -21,7 +21,7 @@ public class AI : MonoBehaviour {
 
         transform.position = Vector3.Lerp(transform.position, path[currentPoint].position, Time.deltaTime * speed);
 
-        if (distance <= reachDistance)
+        if (distance < reachDistance)
         {
             currentPoint++;
         }
