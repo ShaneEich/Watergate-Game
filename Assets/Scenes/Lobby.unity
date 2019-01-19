@@ -788,7 +788,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1126507572}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.29400018, y: 1.74, z: 0.07500017}
+  m_LocalPosition: {x: 0.35, y: 1.74, z: 0.08}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 880490244}
@@ -809,8 +809,8 @@ MonoBehaviour:
   maximumX: 60
   minimumY: -360
   maximumY: 360
-  sensitivityX: 15
-  sensitivityY: 15
+  sensitivityX: 3
+  sensitivityY: 3
   cam: {fileID: 1126507574}
   player: {fileID: 2132064257}
 --- !u!1 &1416686736
@@ -926,7 +926,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 80
   m_CollisionDetection: 1
 --- !u!1001 &1613769036
 Prefab:

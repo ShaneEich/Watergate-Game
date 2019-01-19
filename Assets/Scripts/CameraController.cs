@@ -13,6 +13,7 @@ public class CameraController : MonoBehaviour {
     public float sensitivityY = 15f;
 
     public Camera cam;
+    private bool locked;
 
     float rotationX = 0f;
     float rotationY = 0f;
@@ -28,16 +29,23 @@ public class CameraController : MonoBehaviour {
         offset = transform.position - player.transform.position;
         //  offset = cameraPosition - playerPosition;
 
-            if (Input.GetKey(KeyCode.Escape))
-            {
-                Cursor.lockState = CursorLockMode.None;
-                Cursor.visible = true;
-            }
+
   	}
 	
 	// Update is called once per frame
 	void Update () {
-
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+            locked = true;
+        }else if (Input.GetMouseButtonDown(0)){
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+            locked = false;
+        }
+        if (!locked)
+        {
             rotationY += Input.GetAxis("Mouse X") * sensitivityY;
             rotationX += Input.GetAxis("Mouse Y") * sensitivityX;
 
@@ -47,6 +55,7 @@ public class CameraController : MonoBehaviour {
 
             cam.transform.localEulerAngles = new Vector3(-rotationX, rotationY, 0);
             player.transform.localEulerAngles = new Vector3(-rotationX, rotationY, 0);
+        }
     }
 
     private void LateUpdate()
