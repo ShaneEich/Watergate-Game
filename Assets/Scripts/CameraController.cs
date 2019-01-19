@@ -17,11 +17,16 @@ public class CameraController : MonoBehaviour {
     float rotationX = 0f;
     float rotationY = 0f;
 
+    public Vector3 offset;
+    public Vector3 playerPosition;
+    public Vector3 cameraPosition;
     // Use this for initialization
     void Start () {
         Cursor.lockState = CursorLockMode.Locked;
 
-        if(Input.GetKey(KeyCode.Escape))
+        offset = cameraPosition - playerPosition;
+
+        if (Input.GetKey(KeyCode.Escape))
         {
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
