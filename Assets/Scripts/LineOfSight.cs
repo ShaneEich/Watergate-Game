@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class LineOfSight : MonoBehaviour {
+    [HideInInspector]
     public GameObject player;
     MeshRenderer mesh;
 
     private void Start()
     {
+        player = FindObjectOfType<PlayerController>().gameObject;
         mesh = GetComponent<MeshRenderer>();
     }
     void Update()
@@ -16,7 +18,8 @@ public class LineOfSight : MonoBehaviour {
         if (CanSeePlayer(player))
         {
             mesh.material.color = Color.red;
-            transform.LookAt(player.transform, player.transform.up);
+            transform.LookAt(player.transform.position, transform.up);
+            
         }
         else
         {
