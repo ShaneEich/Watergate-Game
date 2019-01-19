@@ -390,6 +390,21 @@ Prefab:
       propertyPath: Player
       value: 
       objectReference: {fileID: 995122044}
+    - target: {fileID: 114294728961657556, guid: 91091ecc0f682fb40a117a02645dd490,
+        type: 2}
+      propertyPath: closeDoor
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114255339580479586, guid: 91091ecc0f682fb40a117a02645dd490,
+        type: 2}
+      propertyPath: openDoor
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114255339580479586, guid: 91091ecc0f682fb40a117a02645dd490,
+        type: 2}
+      propertyPath: closeDoor
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91091ecc0f682fb40a117a02645dd490, type: 2}
   m_IsPrefabAsset: 0

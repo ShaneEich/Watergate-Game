@@ -12,14 +12,19 @@ public class PlayerInteract : MonoBehaviour {
     {
         if (Input.GetButtonDown("Interact") && currentInterObj)
         {
-            if (currentInterObjScript.openDoor)
+            if (!currentInterObjScript.isOpen)
             {
-                currentInterObjScript.open();
+                if (currentInterObjScript.openDoor)
+                {
+                    currentInterObjScript.open();
+                }
             }
-
-            if (currentInterObjScript.closeDoor)
+            else if (currentInterObjScript.isOpen)
             {
-                currentInterObjScript.close();
+                if (currentInterObjScript.closeDoor)
+                {
+                    currentInterObjScript.close();
+                }
             }
         }
 

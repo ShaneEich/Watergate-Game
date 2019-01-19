@@ -8,17 +8,10 @@ public class ObjectInteract : MonoBehaviour {
     public bool closeDoor;
     public bool talks;
     public bool canInteract;
-    public string tutorialMessage;
-    public string message; 
+    public bool isOpen = false;
     
     public GameObject Player;
     public GameObject door;
-
-    public void Talk()
-    {
-        // If Interactable object can talk display message
-        Debug.Log(message);
-    }
 
     public void CanInteract()
     {
@@ -28,10 +21,12 @@ public class ObjectInteract : MonoBehaviour {
     public void open()
     {
         door.SetActive(false);
+        isOpen = true;
     }
 
     public void close()
     {
         door.SetActive(true);
+        isOpen = false;
     }
 }

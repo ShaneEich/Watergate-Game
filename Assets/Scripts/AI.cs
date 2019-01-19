@@ -24,6 +24,7 @@ public class AI : MonoBehaviour {
         if (distance < reachDistance)
         {
             currentPoint++;
+            this.gameObject.transform.Rotate(0,180,0);
         }
 
         if (currentPoint >= path.Length)
