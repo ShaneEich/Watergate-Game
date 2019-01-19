@@ -6,6 +6,12 @@ URL: https://poly.google.com/view/3r6uTb4Tn0j
 License: Creative Commons CC-BY
 https://creativecommons.org/licenses/by/3.0/legalcode
 
+Title: Animated Human
+Author: Tomas Laulhe
+URL: https://poly.google.com/view/c3Ibh9I3udk
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
 Title: Calculator
 Author: Poly by Google
 URL: https://poly.google.com/view/0yU6BDQRVYw

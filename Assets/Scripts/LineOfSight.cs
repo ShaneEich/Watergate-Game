@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class LineOfSight : MonoBehaviour {
+
     [HideInInspector]
     public GameObject player;
-    MeshRenderer mesh;
+    [HideInInspector]
+    public MeshRenderer mesh;
 
     private void Start()
     {
