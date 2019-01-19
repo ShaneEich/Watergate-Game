@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4723248023394784}
   - component: {fileID: 114870749645187108}
   m_Layer: 0
-  m_Name: Cubicle_Stephen_Faett_9oZP4harYcp
+  m_Name: cubicle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

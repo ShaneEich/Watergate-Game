@@ -9,7 +9,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 33a7a203f9e09e74e9c082121e4f44c1, type: 3}
-  m_Name: Cubicle_Stephen_Faett_9oZP4harYcp
+  m_Name: cubicle
   m_EditorClassIdentifier: 
   assetPrefab: {fileID: 1128327917331396, guid: 0a3ffc1570929fa40810cdc5580b36cc,
     type: 2}
