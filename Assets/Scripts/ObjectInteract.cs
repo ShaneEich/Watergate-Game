@@ -6,12 +6,12 @@ public class ObjectInteract : MonoBehaviour {
 
     public bool openDoor;
     public bool closeDoor;
-    public bool talks;
+    public bool hasKey;
     public bool canInteract;
-    public bool isOpen = false;
     
     public GameObject Player;
     public GameObject door;
+    public GameObject keyCard;
 
     public void CanInteract()
     {
@@ -20,13 +20,17 @@ public class ObjectInteract : MonoBehaviour {
 
     public void open()
     {
-        door.SetActive(false);
-        isOpen = true;
+        door.SetActive(false);      
     }
 
     public void close()
     {
         door.SetActive(true);
-        isOpen = false;
+    }
+
+    public void pickUp()
+    {
+        keyCard.SetActive(false);
+        hasKey = true;
     }
 }

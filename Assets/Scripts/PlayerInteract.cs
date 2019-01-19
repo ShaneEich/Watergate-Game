@@ -2,30 +2,42 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerInteract : MonoBehaviour {
 
     public GameObject currentInterObj = null;
     public ObjectInteract currentInterObjScript = null;
+    public GameObject keyCard;
+    public List<GameObject> keyCards;
 
     void Update()
     {
         if (Input.GetButtonDown("Interact") && currentInterObj)
         {
-            if (!currentInterObjScript.isOpen)
+            if (currentInterObjScript.hasKey)
             {
-                if (currentInterObjScript.openDoor)
-                {
-                    currentInterObjScript.open();
-                }
+                keyCards.Add(keyCard);
+                currentInterObjScript.pickUp();
+                Debug.Log("You picked up the key");
             }
-            else if (currentInterObjScript.isOpen)
+
+            
+                if (currentInterObjScript.openDoor && keyCards.Count > 0)
             {
-                if (currentInterObjScript.closeDoor)
+                    currentInterObjScript.open();
+                    Debug.Log("Door is open");
+                }
+            
+            
+                if (currentInterObjScript.closeDoor && keyCards.Count > 0)
                 {
                     currentInterObjScript.close();
+                    keyCards.Remove(keyCard);
+                    Debug.Log("Door is closed");
+                    SceneManager.LoadScene("Level1");
                 }
-            }
+
         }
 
     }
