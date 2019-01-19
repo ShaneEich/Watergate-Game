@@ -836,7 +836,6 @@ GameObject:
   - component: {fileID: 1416686739}
   - component: {fileID: 1416686738}
   - component: {fileID: 1416686737}
-  - component: {fileID: 1416686741}
   - component: {fileID: 1416686742}
   - component: {fileID: 1416686743}
   m_Layer: 0
@@ -914,17 +913,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1416686741
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1416686736}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7220bb755f23a342872a6440eaba1d0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!65 &1416686742
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1153,7 +1141,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06b189755c6a8c14eafdfc727af35b94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkSpeed: 1000
+  walkSpeed: 250
 --- !u!136 &2132064260
 CapsuleCollider:
   m_ObjectHideFlags: 0

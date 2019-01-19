@@ -48,6 +48,7 @@ public class CameraController : MonoBehaviour
 
         transform.localEulerAngles = new Vector3(0, rotationY, 0);
         cam.transform.localEulerAngles = new Vector3(-rotationX, rotationY, 0);
+        player.transform.localEulerAngles = new Vector3(-rotationX, rotationY, 0);
     }
 
     void LateUpdate()
