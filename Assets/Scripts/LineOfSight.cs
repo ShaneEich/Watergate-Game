@@ -34,16 +34,19 @@ public class LineOfSight : MonoBehaviour {
 
         RaycastHit hit;
         Vector3 rayDirection = target.transform.position - startVec;
-        Debug.DrawRay(startVec, rayDirection, Color.yellow);
+        //Debug.DrawRay(startVec, rayDirection, Color.yellow);
         // If the ObjectToSee is close to this object and is in front of it, then return true
-        if ((Vector3.Angle(rayDirection, startVec)) < 30 &&
+        /*
+        if ((Vector3.Angle(rayDirection, startVec)) < 15 &&
             (Vector3.Distance(startVec, target.transform.position) <= 20f))
         {
             //Debug.Log("close");
-            return true;
+            //return true;
         }
-        if ((Vector3.Angle(rayDirection, startVecFwd)) < 30 &&
-            Physics.Raycast(startVec, rayDirection, out hit, 5f))
+        */
+        //Debug.DrawRay(startVecFwd, rayDirection, Color.red);
+        if ((Vector3.Angle(rayDirection, startVecFwd)) < 35 &&
+            Physics.Raycast(startVec, rayDirection, out hit, 4f))
         { // Detect if player is within the field of view
 
             if (hit.collider.gameObject == target)
