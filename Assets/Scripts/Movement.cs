@@ -50,21 +50,21 @@ public class Movement : MonoBehaviour
         //up inputs
         if (Input.GetKey(KeyCode.UpArrow))
         {
-            direction += Vector3.up;
+            direction += Vector3.forward; 
         }
         if (Input.GetKey(KeyCode.W))
         {
-            direction += Vector3.up;
+            direction += Vector3.forward;
         }
 
         //down inputs
         if (Input.GetKey(KeyCode.DownArrow))
         {
-            direction += Vector3.down;
+            direction += Vector3.back;
         }
         if (Input.GetKey(KeyCode.S))
         {
-            direction += Vector3.down;
+            direction += Vector3.back;
         }
 
         //left inputs
