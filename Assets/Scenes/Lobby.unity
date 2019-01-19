@@ -126,6 +126,7 @@ GameObject:
   - component: {fileID: 52194397}
   - component: {fileID: 52194395}
   - component: {fileID: 52194394}
+  - component: {fileID: 52194396}
   m_Layer: 0
   m_Name: Receptionist
   m_TagString: NPC
@@ -160,6 +161,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.0000001, y: 2, z: 1.0000002}
   m_Center: {x: 0.000000059604645, y: -0.00000023841858, z: -0.00000008940697}
+--- !u!114 &52194396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 52194393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87159891f17f35646985433fdb6345ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 995122044}
 --- !u!136 &52194397
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -222,7 +235,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 52194393}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 3.95, y: 1.01, z: 13.07}
+  m_LocalPosition: {x: 3.95, y: 1.01, z: 8.78}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -375,6 +388,21 @@ Prefab:
     - target: {fileID: 1985306679733846, guid: 6ee67f40e73cbc449ad690701793e7c5, type: 2}
       propertyPath: m_Layer
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 136667109298386384, guid: 6ee67f40e73cbc449ad690701793e7c5,
+        type: 2}
+      propertyPath: m_Radius
+      value: 0.5516421
+      objectReference: {fileID: 0}
+    - target: {fileID: 136667109298386384, guid: 6ee67f40e73cbc449ad690701793e7c5,
+        type: 2}
+      propertyPath: m_Center.x
+      value: 0.2883104
+      objectReference: {fileID: 0}
+    - target: {fileID: 136667109298386384, guid: 6ee67f40e73cbc449ad690701793e7c5,
+        type: 2}
+      propertyPath: m_Center.z
+      value: -5.7708527e-10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6ee67f40e73cbc449ad690701793e7c5, type: 2}
