@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: [NPC, Interactable Object]
+  tags:
+  - NPC
+  - Interactable Object
+  - KeyGuard
+  - Guard
   layers:
   - Default
   - TransparentFX
