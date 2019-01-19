@@ -18,14 +18,14 @@ public class CameraController : MonoBehaviour {
     float rotationY = 0f;
 
     Transform offset;
-    public Vector3 playerPosition;
-    public Vector3 cameraPosition;
+    public Transform playerPosition;
+    public Transform cameraPosition;
 
     // Use this for initialization
     void Start () {
         Cursor.lockState = CursorLockMode.Locked;
 
-        offset = cameraPosition - playerPosition;
+      //  offset = cameraPosition - playerPosition;
 
         if (Input.GetKey(KeyCode.Escape))
         {
