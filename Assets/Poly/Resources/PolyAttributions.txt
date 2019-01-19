@@ -1,13 +1,43 @@
 This project uses the following items from Poly (http://poly.google.com):
 
+Title: A stack of post-it
+Author: Zack Huang
+URL: https://poly.google.com/view/3r6uTb4Tn0j
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
+Title: Calculator
+Author: Poly by Google
+URL: https://poly.google.com/view/0yU6BDQRVYw
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
 Title: Cubicle
 Author: Stephen Faett
 URL: https://poly.google.com/view/9oZP4harYcp
 License: Creative Commons CC-BY
 https://creativecommons.org/licenses/by/3.0/legalcode
 
-Title: Elevator
-Author: Poly by Google
-URL: https://poly.google.com/view/aZ7y77mq_u6
+Title: Large Stack of Paper
+Author: Jarlan Perez
+URL: https://poly.google.com/view/8IY5NMKWEJW
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
+Title: Office Chair
+Author: Ryan Donaldson
+URL: https://poly.google.com/view/3txPAhYeu-x
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
+Title: petblo desk
+Author: Petroleum Blownapart
+URL: https://poly.google.com/view/8uesBX2DhBJ
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
+Title: Simple computer
+Author: Robert Schlyter
+URL: https://poly.google.com/view/doMMnviJrGi
 License: Creative Commons CC-BY
 https://creativecommons.org/licenses/by/3.0/legalcode
