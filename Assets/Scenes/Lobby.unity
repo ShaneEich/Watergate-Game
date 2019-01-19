@@ -241,6 +241,11 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 265.103
       objectReference: {fileID: 0}
+    - target: {fileID: 114402594285431214, guid: 587dac808e78ce642b44acd0e828bd2d,
+        type: 2}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 995122044}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 587dac808e78ce642b44acd0e828bd2d, type: 2}
   m_IsPrefabAsset: 0
