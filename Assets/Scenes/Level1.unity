@@ -2175,6 +2175,10 @@ Prefab:
       propertyPath: m_Name
       value: Calculator
       objectReference: {fileID: 0}
+    - target: {fileID: 1654122078110996, guid: c9e8c92ac908907499522e06386a357a, type: 2}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c9e8c92ac908907499522e06386a357a, type: 2}
   m_IsPrefabAsset: 0
@@ -5458,7 +5462,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4965192588540582, guid: ac1c3c09f32f20540a0ccea0784a0b68, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 22.096123
+      value: 22.096
       objectReference: {fileID: 0}
     - target: {fileID: 4965192588540582, guid: ac1c3c09f32f20540a0ccea0784a0b68, type: 2}
       propertyPath: m_LocalPosition.z
@@ -5488,17 +5492,9 @@ Prefab:
       propertyPath: m_Name
       value: intelSheet
       objectReference: {fileID: 0}
-    - target: {fileID: 4965192588540582, guid: ac1c3c09f32f20540a0ccea0784a0b68, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 1.6052
-      objectReference: {fileID: 0}
-    - target: {fileID: 4965192588540582, guid: ac1c3c09f32f20540a0ccea0784a0b68, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 0.8984891
-      objectReference: {fileID: 0}
-    - target: {fileID: 4965192588540582, guid: ac1c3c09f32f20540a0ccea0784a0b68, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -18.657001
+    - target: {fileID: 1547793312943976, guid: ac1c3c09f32f20540a0ccea0784a0b68, type: 2}
+      propertyPath: m_TagString
+      value: Interactable Object
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ac1c3c09f32f20540a0ccea0784a0b68, type: 2}
