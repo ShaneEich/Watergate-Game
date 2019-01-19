@@ -6,11 +6,15 @@ public class PlayerController : MonoBehaviour
 {
 
     public float walkSpeed;
+    bool crouched;
+    bool sprinting;
+
+
     public Collider topCollider;
     Rigidbody rb;
     Vector3 moveDirection;
-    bool crouched;
-    // var camera = Camera.main;
+
+    public new Camera camera;
 
     private void Awake()
     {
@@ -29,6 +33,7 @@ public class PlayerController : MonoBehaviour
         float horizontalMovement = Input.GetAxisRaw("Horizontal");
         float verticalMovement = Input.GetAxisRaw("Vertical");
         crouch();
+        Sprint();
         moveDirection = (horizontalMovement * transform.right + verticalMovement * transform.forward).normalized;
     }
 
@@ -41,13 +46,36 @@ public class PlayerController : MonoBehaviour
                 topCollider.enabled = false;
                 crouched = true;
                 walkSpeed = walkSpeed / 2;
-            }else if (crouched)
+                Debug.Log("Crouching");
+            }
+            else if (crouched)
             {
                 topCollider.enabled = true;
                 crouched = false;
                 walkSpeed = walkSpeed * 2;
+                Debug.Log("Standing");
             }
         }
+    }
+
+    void Sprint()
+    {
+        if (Input.GetButtonDown("Sprint") && !crouched)
+        {
+            if (!sprinting)
+            {
+                walkSpeed = walkSpeed * 2;
+                sprinting = true;
+                Debug.Log("Sprinting");
+
+            }else if (sprinting)
+            {
+                walkSpeed = walkSpeed / 2;
+                sprinting = false;
+                Debug.Log("Walking");
+            }
+        }
+
     }
 
     void Move()

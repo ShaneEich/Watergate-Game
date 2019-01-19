@@ -20,17 +20,18 @@ public class CameraController : MonoBehaviour {
 
     public GameObject player;
     private Vector3 offset;
+    private Vector3 crouchHeight;
+
+    bool crouching = false;
     //public Transform playerPosition;
     //public Transform cameraPosition;
 
     // Use this for initialization
     void Start () {
         Cursor.lockState = CursorLockMode.Locked;
-        offset = transform.position - player.transform.position;
-        //  offset = cameraPosition - playerPosition;
 
-
-  	}
+            offset = transform.position - player.transform.position;
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -55,14 +56,16 @@ public class CameraController : MonoBehaviour {
 
             cam.transform.localEulerAngles = new Vector3(-rotationX, rotationY, 0);
             player.transform.localEulerAngles = new Vector3(-rotationX, rotationY, 0);
+
         }
+
     }
 
     private void LateUpdate()
     {
         if (!locked)
         {
-            transform.position = player.transform.position + offset;
+            transform.position = player.transform.position + offset;   
         }
     }
 }

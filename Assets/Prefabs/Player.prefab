@@ -190,8 +190,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06b189755c6a8c14eafdfc727af35b94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkSpeed: 250
+  walkSpeed: 200
   topCollider: {fileID: 65167109094761744}
+  camera: {fileID: 20966184995083566}
 --- !u!114 &114063293983358858
 MonoBehaviour:
   m_ObjectHideFlags: 1
