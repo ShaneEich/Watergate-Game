@@ -169,7 +169,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1743093358173078}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.55, y: 1.75, z: 13.906631}
+  m_LocalPosition: {x: -5.55, y: 1.75, z: -16.63}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4559525647369902}
@@ -228,8 +228,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 3.9111981, z: 2.3680058}
-  m_Center: {x: 0, y: 0.010471582, z: 0.082834244}
+  m_Size: {x: 12.913194, y: 1786.4724, z: 19.48081}
+  m_Center: {x: 5.249107, y: 70.19562, z: 0.6103139}
 --- !u!114 &114141995434327992
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -528,26 +528,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 114413009765838904}
   sentences:
-  - 'Strange Voice: Agent Peterson, do you copy?'
-  - 'Frank: Who are you?'
-  - 'Strange Voice: Son, this is
-
-    President Nixon.
-
-    I need your help. America needs your help.'
-  - 'Frank: Yes sir, Mr. President.
-
-    What do you need me to do?'
-  - "Nixon: I left some files at the Watergate \ncomplex. I need you to get them,
-    \nand bring them to me.\n"
-  - "Frank: Yes sir, Mr. President, sir. \nI won\u2019t let you down.\nYou have my
-    word."
-  - "Nixon: Listen carefully, son. \nI've had some agents plant \nsome weapons for
-    you."
-  - "Find them and take out the guards. \nYou will need a gate card \nto access each
-    higher floor."
-  - "And dont forget the files! \nThey could be anywhere."
-  typingSpeed: 0.05
+  - (Press E to pickup items and interact)
+  typingSpeed: 0.03
   continueButton: {fileID: 1108223052838668}
   canvas: {fileID: 1783996778626366}
 --- !u!114 &114944941537119064

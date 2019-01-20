@@ -625,6 +625,11 @@ Prefab:
       propertyPath: sentences.Array.data[8]
       value: "And dont forget the files! \nThey could be anywhere."
       objectReference: {fileID: 0}
+    - target: {fileID: 114401298001439486, guid: 31d8def06ea214647b9ef45b4fd16464,
+        type: 2}
+      propertyPath: typingSpeed
+      value: 0.03
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 31d8def06ea214647b9ef45b4fd16464, type: 2}
   m_IsPrefabAsset: 0
