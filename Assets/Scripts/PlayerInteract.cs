@@ -86,6 +86,11 @@ public class PlayerInteract : MonoBehaviour {
                 Debug.Log("No weapons available.");
             }
         }
+        if (Input.GetKey(KeyCode.Return))
+        {
+            Application.Quit();
+            Debug.Log("Closing Game.");
+        }
     }
 
     //check if the player is colliding with a trigger and display the trigger's name
