@@ -8,13 +8,11 @@ public class LineOfSight : MonoBehaviour {
     public GameObject player;
     [HideInInspector]
     public MeshRenderer mesh;
-    public GameObject floor;
 
     private void Start()
     {
         player = FindObjectOfType<PlayerController>().gameObject;
         mesh = GetComponent<MeshRenderer>();
-        floor = GameObject.Find("Floor");
     }
     void Update()
     {
@@ -22,7 +20,7 @@ public class LineOfSight : MonoBehaviour {
         if (CanSeePlayer(player))
         {
             mesh.material.color = Color.red;
-            transform.LookAt(player.transform.position, floor.transform.up);
+            transform.LookAt(player.transform.position, transform.up);
             
         }
         else
