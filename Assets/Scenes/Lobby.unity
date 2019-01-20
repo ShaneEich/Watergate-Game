@@ -1753,7 +1753,8 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 4.084808, y: 1.3516628, z: 8.230596}
   m_LocalScale: {x: 0.12830482, y: 0.0015164062, z: 0.068047166}
-  m_Children: []
+  m_Children:
+  - {fileID: 1816911910}
   m_Father: {fileID: 844012420}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3623,6 +3624,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114401298001439486, guid: 31d8def06ea214647b9ef45b4fd16464,
+        type: 2}
+      propertyPath: sentences.Array.size
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4014819994377224, guid: 31d8def06ea214647b9ef45b4fd16464, type: 2}
       propertyPath: m_LocalPosition.x
       value: -16.730759
@@ -3654,6 +3660,23 @@ Prefab:
     - target: {fileID: 4014819994377224, guid: 31d8def06ea214647b9ef45b4fd16464, type: 2}
       propertyPath: m_RootOrder
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114401298001439486, guid: 31d8def06ea214647b9ef45b4fd16464,
+        type: 2}
+      propertyPath: sentences.Array.data[6]
+      value: "Nixon: Listen carefully, son. \nI've had some agents plant \nsome weapons
+        for you."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114401298001439486, guid: 31d8def06ea214647b9ef45b4fd16464,
+        type: 2}
+      propertyPath: sentences.Array.data[7]
+      value: "Find them and take out the guards. \nYou will need a gate card \nto
+        access each higher floor."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114401298001439486, guid: 31d8def06ea214647b9ef45b4fd16464,
+        type: 2}
+      propertyPath: sentences.Array.data[8]
+      value: "And dont forget the files! \nThey could be anywhere."
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 31d8def06ea214647b9ef45b4fd16464, type: 2}
@@ -6724,6 +6747,143 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4827977164864986, guid: ff9b991685fba0f469719b5342b1e9fc,
     type: 2}
   m_PrefabInternal: {fileID: 1945285776}
+--- !u!1001 &1816911909
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 367331083}
+    m_Modifications:
+    - target: {fileID: 114817826234410424, guid: 250b43e44a36bde48bf69e8609b2e80c,
+        type: 2}
+      propertyPath: sentences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4353203423545872, guid: 250b43e44a36bde48bf69e8609b2e80c, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -5.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 4353203423545872, guid: 250b43e44a36bde48bf69e8609b2e80c, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 4353203423545872, guid: 250b43e44a36bde48bf69e8609b2e80c, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -16.63
+      objectReference: {fileID: 0}
+    - target: {fileID: 4353203423545872, guid: 250b43e44a36bde48bf69e8609b2e80c, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4353203423545872, guid: 250b43e44a36bde48bf69e8609b2e80c, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4353203423545872, guid: 250b43e44a36bde48bf69e8609b2e80c, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4353203423545872, guid: 250b43e44a36bde48bf69e8609b2e80c, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4353203423545872, guid: 250b43e44a36bde48bf69e8609b2e80c, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 65872041254966712, guid: 250b43e44a36bde48bf69e8609b2e80c,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 1786.4724
+      objectReference: {fileID: 0}
+    - target: {fileID: 65872041254966712, guid: 250b43e44a36bde48bf69e8609b2e80c,
+        type: 2}
+      propertyPath: m_Center.y
+      value: 70.19562
+      objectReference: {fileID: 0}
+    - target: {fileID: 65872041254966712, guid: 250b43e44a36bde48bf69e8609b2e80c,
+        type: 2}
+      propertyPath: m_Center.z
+      value: 0.6103139
+      objectReference: {fileID: 0}
+    - target: {fileID: 65872041254966712, guid: 250b43e44a36bde48bf69e8609b2e80c,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 12.913194
+      objectReference: {fileID: 0}
+    - target: {fileID: 65872041254966712, guid: 250b43e44a36bde48bf69e8609b2e80c,
+        type: 2}
+      propertyPath: m_Center.x
+      value: 5.249107
+      objectReference: {fileID: 0}
+    - target: {fileID: 65872041254966712, guid: 250b43e44a36bde48bf69e8609b2e80c,
+        type: 2}
+      propertyPath: m_Size.z
+      value: 19.48081
+      objectReference: {fileID: 0}
+    - target: {fileID: 114817826234410424, guid: 250b43e44a36bde48bf69e8609b2e80c,
+        type: 2}
+      propertyPath: sentences.Array.data[1]
+      value: 'Frank: Who are you?'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114817826234410424, guid: 250b43e44a36bde48bf69e8609b2e80c,
+        type: 2}
+      propertyPath: sentences.Array.data[2]
+      value: 'Strange Voice: Son, this is
+
+        President Nixon.
+
+        I need your help. America needs your help.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114817826234410424, guid: 250b43e44a36bde48bf69e8609b2e80c,
+        type: 2}
+      propertyPath: sentences.Array.data[3]
+      value: 'Frank: Yes sir, Mr. President.
+
+        What do you need me to do?'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114817826234410424, guid: 250b43e44a36bde48bf69e8609b2e80c,
+        type: 2}
+      propertyPath: sentences.Array.data[4]
+      value: "Nixon: I left some files at the Watergate \ncomplex. I need you to get
+        them, \nand bring them to me.\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114817826234410424, guid: 250b43e44a36bde48bf69e8609b2e80c,
+        type: 2}
+      propertyPath: sentences.Array.data[5]
+      value: "Frank: Yes sir, Mr. President, sir. \nI won\u2019t let you down.\nYou
+        have my word."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114817826234410424, guid: 250b43e44a36bde48bf69e8609b2e80c,
+        type: 2}
+      propertyPath: sentences.Array.data[6]
+      value: "Nixon: Listen carefully, son. \nI've had some agents plant \nsome weapons
+        for you."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114817826234410424, guid: 250b43e44a36bde48bf69e8609b2e80c,
+        type: 2}
+      propertyPath: sentences.Array.data[7]
+      value: "Find them and take out the guards. \nYou will need a gate card \nto
+        access each higher floor."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114817826234410424, guid: 250b43e44a36bde48bf69e8609b2e80c,
+        type: 2}
+      propertyPath: sentences.Array.data[8]
+      value: "And dont forget the files! \nThey could be anywhere."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114817826234410424, guid: 250b43e44a36bde48bf69e8609b2e80c,
+        type: 2}
+      propertyPath: sentences.Array.data[0]
+      value: (Press E to pickup items and interact)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 250b43e44a36bde48bf69e8609b2e80c, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!4 &1816911910 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4353203423545872, guid: 250b43e44a36bde48bf69e8609b2e80c,
+    type: 2}
+  m_PrefabInternal: {fileID: 1816911909}
 --- !u!1 &1835660812
 GameObject:
   m_ObjectHideFlags: 0
