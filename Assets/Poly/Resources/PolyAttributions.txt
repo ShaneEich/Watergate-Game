@@ -42,12 +42,6 @@ URL: https://poly.google.com/view/7akG34ZUVtc
 License: Creative Commons CC-BY
 https://creativecommons.org/licenses/by/3.0/legalcode
 
-Title: Corinthian/Interior column
-Author: Ethan Stewart
-URL: https://poly.google.com/view/1t-Yzw2i16n
-License: Creative Commons CC-BY
-https://creativecommons.org/licenses/by/3.0/legalcode
-
 Title: Cubicle
 Author: Stephen Faett
 URL: https://poly.google.com/view/9oZP4harYcp
@@ -63,6 +57,12 @@ https://creativecommons.org/licenses/by/3.0/legalcode
 Title: Daisies
 Author: Ryan Korsak
 URL: https://poly.google.com/view/2mP9UmObtKr
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
+Title: High Tea
+Author: Don Carson
+URL: https://poly.google.com/view/2cX88a40PMz
 License: Creative Commons CC-BY
 https://creativecommons.org/licenses/by/3.0/legalcode
 
