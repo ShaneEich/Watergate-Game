@@ -46,6 +46,7 @@ public class PlayerController : MonoBehaviour
                 topCollider.enabled = false;
                 crouched = true;
                 walkSpeed = walkSpeed / 2;
+                //GameObject.Find("Main Camera").transform.position = new Vector3(0f,1f,0f);
                 Debug.Log("Crouching");
             }
             else if (crouched)
@@ -53,7 +54,7 @@ public class PlayerController : MonoBehaviour
                 topCollider.enabled = true;
                 crouched = false;
                 walkSpeed = walkSpeed * 2;
-               // camera.transform.position.y;
+                
                 Debug.Log("Standing");
             }
         }
