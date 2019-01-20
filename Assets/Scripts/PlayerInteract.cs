@@ -8,6 +8,7 @@ public class PlayerInteract : MonoBehaviour {
 
     //create the game objects to be referenced in this script
     public GameObject currentInterObj = null;
+    public GameObject currentEnemy = null;
     public ObjectInteract currentInterObjScript = null;
     public AICombat currentCombatScript = null;
 
@@ -64,12 +65,12 @@ public class PlayerInteract : MonoBehaviour {
                     Debug.Log("Door is closed");
                     SceneManager.LoadScene("Level1");
                 }
-                if(weapons.Count > 0)
+              /* if(currentCombatScript.isGuard && weapons.Count > 0)
             {
                 currentCombatScript.KOGuard();
                 weapons.Remove(weapon);
                 Debug.Log("Guard Knocked Out");
-            }
+            }*/
 
         }
 
@@ -86,13 +87,13 @@ public class PlayerInteract : MonoBehaviour {
             currentInterObj = other.gameObject;
             currentInterObjScript = currentInterObj.GetComponent<ObjectInteract>();
         }
-        if (other.CompareTag("Guard"))
+        /*if (other.CompareTag("Guard"))
         {
             Debug.Log(other.name);
-            currentInterObj = other.gameObject;
-            currentCombatScript = currentInterObj.GetComponent<AICombat>();
+            currentEnemy = other.gameObject;
+            currentCombatScript = currentEnemy.GetComponent<AICombat>();
 
-        }
+        }*/
     }
 
     void OnTriggerExit(Collider other)

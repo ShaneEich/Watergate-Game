@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class AICombat : MonoBehaviour {
     public Collider attackCollider;
+    public bool isGuard = true;
 	// Use this for initialization
 	void Start () {
 		
