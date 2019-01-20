@@ -16,14 +16,11 @@ public class AICombat : MonoBehaviour {
 		
 	}
 
-    public void KOGuard()
-    {
-        this.gameObject.SetActive(false);
-    }
 
-    void OnTriggerEnter(Collider attackCollider)
+
+    void OnTriggerEnter(Collider collider)
     {
-        if (attackCollider.CompareTag("Player"))
+        if (collider.CompareTag("Player"))
         {
             Scene scene = SceneManager.GetActiveScene();
             SceneManager.LoadScene(scene.name);

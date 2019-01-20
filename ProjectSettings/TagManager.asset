@@ -9,6 +9,7 @@ TagManager:
   - KeyGuard
   - Guard
   - HitCheck
+  - EnemyHit
   layers:
   - Default
   - TransparentFX
