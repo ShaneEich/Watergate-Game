@@ -3,7 +3,13 @@ guid: 323449ed776b32d479e39ee1896e95c3
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - currentInterObj: {instanceID: 0}
+  - currentInterObjScript: {instanceID: 0}
+  - currentCombatScript: {instanceID: 0}
+  - keyCard: {instanceID: 0}
+  - weapon: {instanceID: 0}
+  - file: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
