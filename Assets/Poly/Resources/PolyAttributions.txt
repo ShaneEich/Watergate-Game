@@ -18,6 +18,18 @@ URL: https://poly.google.com/view/63U8J3bGSaO
 License: Creative Commons CC-BY
 https://creativecommons.org/licenses/by/3.0/legalcode
 
+Title: Breakfast Bar
+Author: Ian MacGillivray
+URL: https://poly.google.com/view/aN9tmDVHKkH
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
+Title: cacti_2
+Author: Device Lab
+URL: https://poly.google.com/view/d1SMEAVIPbn
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
 Title: Calculator
 Author: Poly by Google
 URL: https://poly.google.com/view/0yU6BDQRVYw
@@ -27,6 +39,24 @@ https://creativecommons.org/licenses/by/3.0/legalcode
 Title: Cubicle
 Author: Stephen Faett
 URL: https://poly.google.com/view/9oZP4harYcp
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
+Title: Cup of coffee
+Author: Poly by Google
+URL: https://poly.google.com/view/1HpVP5w2x1D
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
+Title: end table
+Author: zeoxo
+URL: https://poly.google.com/view/etAW2m5TyGu
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
+Title: Fish Tank 🎏
+Author: Chris Ross
+URL: https://poly.google.com/view/2Rb9zxgkDEM
 License: Creative Commons CC-BY
 https://creativecommons.org/licenses/by/3.0/legalcode
 
@@ -42,6 +72,18 @@ URL: https://poly.google.com/view/amKb-kR0wo-
 License: Creative Commons CC-BY
 https://creativecommons.org/licenses/by/3.0/legalcode
 
+Title: Message board
+Author: Poly by Google
+URL: https://poly.google.com/view/fDpegPgEB0j
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
+Title: Monitor
+Author: Poly by Google
+URL: https://poly.google.com/view/2D221SHzAER
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
 Title: Office Chair
 Author: Ryan Donaldson
 URL: https://poly.google.com/view/3txPAhYeu-x
@@ -54,6 +96,18 @@ URL: https://poly.google.com/view/8uesBX2DhBJ
 License: Creative Commons CC-BY
 https://creativecommons.org/licenses/by/3.0/legalcode
 
+Title: Piano
+Author: Poly by Google
+URL: https://poly.google.com/view/7U-93vxPOER
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
+Title: quemicas yellow palch
+Author: Zachary Phillips
+URL: https://poly.google.com/view/2MeX_6NA2W4
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
 Title: Simple computer
 Author: Robert Schlyter
 URL: https://poly.google.com/view/doMMnviJrGi
@@ -63,6 +117,48 @@ https://creativecommons.org/licenses/by/3.0/legalcode
 Title: small palm trees 3
 Author: Steve B
 URL: https://poly.google.com/view/0rs2mKeKQxr
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
+Title: Sofa
+Author: Pau Butiñà
+URL: https://poly.google.com/view/06IP_paU6-D
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
+Title: Stapler
+Author: Poly by Google
+URL: https://poly.google.com/view/cSUMLFBEzi3
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
+Title: Table
+Author: Syl Joly (syljoly)
+URL: https://poly.google.com/view/e7kBP4_EnBI
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
+Title: Television
+Author: Poly by Google
+URL: https://poly.google.com/view/6Fa29JN3A3F
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
+Title: VHS Player
+Author: Guillaume Brette
+URL: https://poly.google.com/view/aKbbEPJanoJ
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
+Title: Videogame
+Author: Poly by Google
+URL: https://poly.google.com/view/7jHiQIMZkRs
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
+Title: Water Cooler
+Author: Alex “SAFFY” Safayan
+URL: https://poly.google.com/view/6zon-acGTIu
 License: Creative Commons CC-BY
 https://creativecommons.org/licenses/by/3.0/legalcode
 
