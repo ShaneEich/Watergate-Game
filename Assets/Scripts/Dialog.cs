@@ -6,6 +6,7 @@ using TMPro;
 public class Dialog : MonoBehaviour {
 
     public TextMeshProUGUI textDisplay;
+    [TextArea(3, 10)]
     public string[] sentences;
     private int index;
     public float typingSpeed;
@@ -31,6 +32,7 @@ public class Dialog : MonoBehaviour {
         {
             if (Input.GetKey(KeyCode.Space))
             {
+                //StopAllCoroutines();
                 nextSentence();
             }
             //continueButton.SetActive(true);
@@ -56,6 +58,7 @@ public class Dialog : MonoBehaviour {
         {
             index++;
             textDisplay.text = "";
+            //StopAllCoroutines();
             StartCoroutine(Type());
         }
         else if (index == sentences.Length - 1)
