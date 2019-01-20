@@ -2856,7 +2856,7 @@ Prefab:
     - target: {fileID: 114401298001439486, guid: 31d8def06ea214647b9ef45b4fd16464,
         type: 2}
       propertyPath: sentences.Array.size
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4014819994377224, guid: 31d8def06ea214647b9ef45b4fd16464, type: 2}
       propertyPath: m_LocalPosition.x
@@ -2893,20 +2893,19 @@ Prefab:
     - target: {fileID: 114401298001439486, guid: 31d8def06ea214647b9ef45b4fd16464,
         type: 2}
       propertyPath: sentences.Array.data[0]
-      value: "Frank: Yes sir, Mr. President, sir. \nI won\u2019t let you down.\nYou
-        have my word."
-      objectReference: {fileID: 0}
-    - target: {fileID: 114401298001439486, guid: 31d8def06ea214647b9ef45b4fd16464,
-        type: 2}
-      propertyPath: sentences.Array.data[1]
       value: "Nixon: Listen carefully, son. \nI've had some agents plant \nsome weapons
         for you."
       objectReference: {fileID: 0}
     - target: {fileID: 114401298001439486, guid: 31d8def06ea214647b9ef45b4fd16464,
         type: 2}
-      propertyPath: sentences.Array.data[2]
+      propertyPath: sentences.Array.data[1]
       value: "Find them and take out the guards. \nYou will need a gate card \nto
         access each higher floor."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114401298001439486, guid: 31d8def06ea214647b9ef45b4fd16464,
+        type: 2}
+      propertyPath: sentences.Array.data[2]
+      value: "And dont forget the files! \nThey could be anywhere."
       objectReference: {fileID: 0}
     - target: {fileID: 114401298001439486, guid: 31d8def06ea214647b9ef45b4fd16464,
         type: 2}

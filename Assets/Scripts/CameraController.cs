@@ -29,8 +29,8 @@ public class CameraController : MonoBehaviour {
     // Use this for initialization
     void Start () {
         Cursor.lockState = CursorLockMode.Locked;
-
-            offset = transform.position - player.transform.position;
+        Cursor.visible = true;
+        offset = transform.position - player.transform.position;
     }
 	
 	// Update is called once per frame
