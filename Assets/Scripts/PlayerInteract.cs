@@ -63,7 +63,8 @@ public class PlayerInteract : MonoBehaviour {
                     currentInterObjScript.close();
                     keyCards.Remove(keyCard);
                     Debug.Log("Door is closed");
-                    SceneManager.LoadScene("Level1");
+                    Scene scene = SceneManager.GetActiveScene();
+                    SceneManager.LoadScene(scene.buildIndex + 1);
                 }
               /* if(currentCombatScript.isGuard && weapons.Count > 0)
             {
