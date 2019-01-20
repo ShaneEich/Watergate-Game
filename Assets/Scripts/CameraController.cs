@@ -40,7 +40,7 @@ public class CameraController : MonoBehaviour {
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
             locked = true;
-        }else if (Input.GetMouseButtonDown(0)){
+        }else if (Input.GetMouseButtonDown(1)){
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
             locked = false;
