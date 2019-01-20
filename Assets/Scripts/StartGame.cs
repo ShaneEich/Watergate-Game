@@ -11,6 +11,7 @@ public class StartGame : MonoBehaviour {
 	void Start () {
         Button button = startButton.GetComponent<Button>();
         button.onClick.AddListener(startGame);
+        
 	}
 	
 	// Update is called once per frame
