@@ -32,12 +32,12 @@ public class PlayerController : MonoBehaviour
     {
         float horizontalMovement = Input.GetAxisRaw("Horizontal");
         float verticalMovement = Input.GetAxisRaw("Vertical");
-        crouch();
+        Crouch();
         Sprint();
         moveDirection = (horizontalMovement * transform.right + verticalMovement * transform.forward).normalized;
     }
 
-    void crouch()
+    void Crouch()
     {
         if (Input.GetButtonDown("Crouch"))
         {
@@ -57,7 +57,6 @@ public class PlayerController : MonoBehaviour
             }
         }
     }
-
     void Sprint()
     {
         if (Input.GetButtonDown("Sprint") && !crouched)
@@ -67,32 +66,28 @@ public class PlayerController : MonoBehaviour
                 walkSpeed = walkSpeed * 2;
                 sprinting = true;
                 Debug.Log("Sprinting");
-
-            }else if (sprinting)
+            }
+            else if (sprinting)
             {
                 walkSpeed = walkSpeed / 2;
                 sprinting = false;
                 Debug.Log("Walking");
             }
         }
-
     }
-
     void Move()
     {
         if (!crouched)
         {
             rb.velocity = moveDirection * walkSpeed * Time.deltaTime;
-        }else if (crouched)
+        }
+        else if (crouched)
         {
             rb.velocity = moveDirection * walkSpeed * Time.deltaTime / 2;
         }
     }
-
     void FixedUpdate()
-    {
-        
+    {   
         Move();
-
     }
 }
