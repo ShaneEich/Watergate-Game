@@ -8,7 +8,6 @@ TagManager:
   - Interactable Object
   - KeyGuard
   - Guard
-  - Weapon
   layers:
   - Default
   - TransparentFX
