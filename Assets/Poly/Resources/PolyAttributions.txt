@@ -12,6 +12,12 @@ URL: https://poly.google.com/view/c3Ibh9I3udk
 License: Creative Commons CC-BY
 https://creativecommons.org/licenses/by/3.0/legalcode
 
+Title: Barstool
+Author: Poly by Google
+URL: https://poly.google.com/view/63U8J3bGSaO
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
 Title: Calculator
 Author: Poly by Google
 URL: https://poly.google.com/view/0yU6BDQRVYw
@@ -51,6 +57,12 @@ https://creativecommons.org/licenses/by/3.0/legalcode
 Title: Simple computer
 Author: Robert Schlyter
 URL: https://poly.google.com/view/doMMnviJrGi
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
+Title: small palm trees 3
+Author: Steve B
+URL: https://poly.google.com/view/0rs2mKeKQxr
 License: Creative Commons CC-BY
 https://creativecommons.org/licenses/by/3.0/legalcode
 
