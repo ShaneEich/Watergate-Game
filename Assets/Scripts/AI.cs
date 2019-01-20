@@ -8,6 +8,7 @@ public class AI : MonoBehaviour {
     public float speed = 5.0f;
     public float reachDistance = 1.0f;
     public int currentPoint = 0;
+   
 
 	// Use this for initialization
 	void Start () {

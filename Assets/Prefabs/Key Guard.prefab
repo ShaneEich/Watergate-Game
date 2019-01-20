@@ -42,6 +42,9 @@ GameObject:
   - component: {fileID: 23444360791087850}
   - component: {fileID: 114740737690807866}
   - component: {fileID: 114607099368577752}
+  - component: {fileID: 65636210945501438}
+  - component: {fileID: 65796280354930844}
+  - component: {fileID: 114902094734312402}
   m_Layer: 0
   m_Name: Key Guard
   m_TagString: NPC
@@ -503,8 +506,32 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.3785756, y: 5.3221607, z: 2.4680424}
+  m_Size: {x: 1.4688759, y: 5.3221607, z: 2.0650861}
   m_Center: {x: 0.16925745, y: 0.0066559655, z: 0.31011242}
+--- !u!65 &65636210945501438
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1238298682655984}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.4688759, y: 5.3221607, z: 1.5129056}
+  m_Center: {x: 0.16925745, y: 0.0066559655, z: -1.4788836}
+--- !u!65 &65796280354930844
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1238298682655984}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.4688759, y: 5.3221607, z: 1.768083}
+  m_Center: {x: 0.16925745, y: 0.0066559655, z: 2.233892}
 --- !u!108 &108914607620621476
 Light:
   m_ObjectHideFlags: 1
@@ -573,6 +600,19 @@ MonoBehaviour:
   player: {fileID: 0}
   mesh: {fileID: 0}
   floor: {fileID: 0}
+--- !u!114 &114902094734312402
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1238298682655984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b27802ec434c054380cf6bf3f86f5bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackCollider: {fileID: 65796280354930844}
+  KOCollider: {fileID: 65636210945501438}
 --- !u!136 &136013652048767632
 CapsuleCollider:
   m_ObjectHideFlags: 1
