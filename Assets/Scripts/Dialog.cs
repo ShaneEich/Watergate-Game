@@ -19,23 +19,30 @@ public class Dialog : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        
+
         //source.GetComponent<AudioSource>();
-        canvas.SetActive(true);
-        StartCoroutine(Type());
+        if (sentences.Length != 0)
+        {
+            canvas.SetActive(true);
+            StartCoroutine(Type());
+        }
+
 	}
 
     // Update is called once per frame
     private void Update()
     {
-        if (textDisplay.text == sentences[index])
+        if(sentences.Length != 0)
         {
-            if (Input.GetKey(KeyCode.Space))
+            if (textDisplay.text == sentences[index])
             {
-                //StopAllCoroutines();
-                nextSentence();
+                if (Input.GetKey(KeyCode.Space))
+                {
+                    //StopAllCoroutines();
+                    nextSentence();
+                }
+                //continueButton.SetActive(true);
             }
-            //continueButton.SetActive(true);
         }
     }
 
