@@ -53,6 +53,7 @@ public class PlayerController : MonoBehaviour
                 topCollider.enabled = true;
                 crouched = false;
                 walkSpeed = walkSpeed * 2;
+               // camera.transform.position.y;
                 Debug.Log("Standing");
             }
         }
