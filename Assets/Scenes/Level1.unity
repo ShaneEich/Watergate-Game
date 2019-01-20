@@ -2079,7 +2079,7 @@ GameObject:
   - component: {fileID: 551660198}
   - component: {fileID: 551660197}
   m_Layer: 0
-  m_Name: Wall (4)
+  m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
