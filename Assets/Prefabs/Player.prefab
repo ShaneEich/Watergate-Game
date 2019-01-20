@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 114041288812667644}
   - component: {fileID: 65167109094761744}
   - component: {fileID: 114063293983358858}
+  - component: {fileID: 65570027092781580}
   m_Layer: 9
   m_Name: PlayerCollider
   m_TagString: Player
@@ -83,15 +84,15 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1536191313902328}
-  m_LocalRotation: {x: -0, y: 0.73497427, z: -0, w: 0.6780951}
-  m_LocalPosition: {x: -4.672067, y: 0.03999996, z: 6.8471437}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -2.91, y: 0.03999996, z: 6.34}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4008127899066080}
   - {fileID: 4563801070279542}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 94.61001, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!4 &4563801070279542
 Transform:
   m_ObjectHideFlags: 1
@@ -172,6 +173,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1.3997688, z: 1}
   m_Center: {x: 0, y: 0.73818386, z: 0}
+--- !u!65 &65570027092781580
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1313556845071652}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1.9223192, z: 0.49205774}
+  m_Center: {x: 3.5071145e-15, y: 0.46115908, z: 0.7467911}
 --- !u!81 &81574166966122622
 AudioListener:
   m_ObjectHideFlags: 1
@@ -206,6 +219,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentInterObj: {fileID: 0}
   currentInterObjScript: {fileID: 0}
+  currentCombatScript: {fileID: 0}
+  keyCard: {fileID: 0}
+  keyCards: []
+  weapon: {fileID: 0}
+  weapons: []
+  file: {fileID: 0}
+  files: []
 --- !u!114 &114244634311006230
 MonoBehaviour:
   m_ObjectHideFlags: 1

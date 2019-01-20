@@ -468,10 +468,14 @@ MonoBehaviour:
   openDoor: 0
   closeDoor: 0
   hasKey: 1
+  hasWeapon: 0
+  hasFile: 0
   canInteract: 0
   Player: {fileID: 995122044}
   door: {fileID: 628019675}
   keyCard: {fileID: 367331079}
+  weapon: {fileID: 0}
+  file: {fileID: 0}
 --- !u!1001 &372686011
 Prefab:
   m_ObjectHideFlags: 0
@@ -479,11 +483,6 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 114063293983358858, guid: 6ee67f40e73cbc449ad690701793e7c5,
-        type: 2}
-      propertyPath: keyCards.Array.size
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4226164739192820, guid: 6ee67f40e73cbc449ad690701793e7c5, type: 2}
       propertyPath: m_LocalPosition.x
       value: -2.91
@@ -521,10 +520,6 @@ Prefab:
       propertyPath: keyCard
       value: 
       objectReference: {fileID: 367331079}
-    - target: {fileID: 4226164739192820, guid: 6ee67f40e73cbc449ad690701793e7c5, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 90
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6ee67f40e73cbc449ad690701793e7c5, type: 2}
   m_IsPrefabAsset: 0
@@ -1036,10 +1031,14 @@ MonoBehaviour:
   openDoor: 1
   closeDoor: 0
   hasKey: 0
+  hasWeapon: 0
+  hasFile: 0
   canInteract: 0
   Player: {fileID: 995122044}
   door: {fileID: 420179156}
   keyCard: {fileID: 367331079}
+  weapon: {fileID: 0}
+  file: {fileID: 0}
 --- !u!23 &674345069
 MeshRenderer:
   m_ObjectHideFlags: 0

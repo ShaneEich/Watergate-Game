@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class AICombat : MonoBehaviour {
     public Collider attackCollider;
-    public Collider KOCollider;
 	// Use this for initialization
 	void Start () {
 		
@@ -15,6 +14,11 @@ public class AICombat : MonoBehaviour {
 	void Update () {
 		
 	}
+
+    public void KOGuard()
+    {
+        this.gameObject.SetActive(false);
+    }
 
     void OnTriggerEnter(Collider attackCollider)
     {
