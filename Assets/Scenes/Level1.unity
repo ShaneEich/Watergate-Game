@@ -2853,6 +2853,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114401298001439486, guid: 31d8def06ea214647b9ef45b4fd16464,
+        type: 2}
+      propertyPath: sentences.Array.size
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 4014819994377224, guid: 31d8def06ea214647b9ef45b4fd16464, type: 2}
       propertyPath: m_LocalPosition.x
       value: -16.730759
@@ -2898,6 +2903,47 @@ Prefab:
     - target: {fileID: 114401298001439486, guid: 31d8def06ea214647b9ef45b4fd16464,
         type: 2}
       propertyPath: sentences.Array.data[2]
+      value: 'Nixon: Son, this is President Nixon.
+
+        I need your help. America needs your help.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114401298001439486, guid: 31d8def06ea214647b9ef45b4fd16464,
+        type: 2}
+      propertyPath: sentences.Array.data[3]
+      value: 'Frank: Yes sir, Mr. President. What do you need me to do?'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114401298001439486, guid: 31d8def06ea214647b9ef45b4fd16464,
+        type: 2}
+      propertyPath: sentences.Array.data[4]
+      value: "Nixon: I left some files at the Watergate complex. \nI need you to get
+        them, and bring them to me.\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114401298001439486, guid: 31d8def06ea214647b9ef45b4fd16464,
+        type: 2}
+      propertyPath: sentences.Array.data[5]
+      value: "Frank: Yes sir, Mr. President, sir. \nI won\u2019t let you down.\nYou
+        have my word."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114401298001439486, guid: 31d8def06ea214647b9ef45b4fd16464,
+        type: 2}
+      propertyPath: sentences.Array.data[6]
+      value: "Nixon: Listen carefully, son. \nI've had some agents plant some weapons
+        for you."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114401298001439486, guid: 31d8def06ea214647b9ef45b4fd16464,
+        type: 2}
+      propertyPath: sentences.Array.data[7]
+      value: "Find them and take out the guards. \nYou will need a gate card to access
+        each higher floor."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114401298001439486, guid: 31d8def06ea214647b9ef45b4fd16464,
+        type: 2}
+      propertyPath: sentences.Array.data[8]
+      value: "And dont forget the files! \nThey could be anywhere."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114401298001439486, guid: 31d8def06ea214647b9ef45b4fd16464,
+        type: 2}
+      propertyPath: sentences.Array.data[9]
       value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
