@@ -29,7 +29,11 @@ public class Dialog : MonoBehaviour {
     {
         if (textDisplay.text == sentences[index])
         {
-            continueButton.SetActive(true);
+            if (Input.GetKey(KeyCode.Space))
+            {
+                nextSentence();
+            }
+            //continueButton.SetActive(true);
         }
     }
 
@@ -46,7 +50,7 @@ public class Dialog : MonoBehaviour {
         //source.Play();
         //textDisplayAnimator.SetTrigger("Change");
         canvas.SetActive(true);
-        continueButton.SetActive(false);
+       // continueButton.SetActive(false);
 
 		if (index < sentences.Length - 1)
         {
@@ -61,7 +65,7 @@ public class Dialog : MonoBehaviour {
         else
         {
             textDisplay.text = "";
-            continueButton.SetActive(false);
+            //continueButton.SetActive(false);
         }
 	}
 }
