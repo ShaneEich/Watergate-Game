@@ -28,6 +28,7 @@ public class PlayerInteract : MonoBehaviour {
             {
                 keyCards.Add(keyCard);
                 currentInterObjScript.pickUpKey();
+                currentInterObj = null;
                 Debug.Log("You picked up the key");
             }
 
@@ -35,6 +36,7 @@ public class PlayerInteract : MonoBehaviour {
             {
                 weapons.Add(weapon);
                 currentInterObjScript.pickUpWeapon();
+                currentInterObj = null;
                 Debug.Log("You picked up the weapon");
             }
 
@@ -42,6 +44,7 @@ public class PlayerInteract : MonoBehaviour {
             {
                 files.Add(file);
                 currentInterObjScript.pickUpFile();
+                currentInterObj = null;
                 Debug.Log("You picked up the file");
             }
 
