@@ -11,7 +11,6 @@ public class Dialog : MonoBehaviour {
     private int index;
     public float typingSpeed;
 
-    public GameObject continueButton;
     public GameObject canvas;
     
     //public Animator textDisplayAnimator;
@@ -36,11 +35,11 @@ public class Dialog : MonoBehaviour {
         {
             if (textDisplay.text == sentences[index])
             {
-                if (Input.GetKey(KeyCode.Space))
-                {
-                    //StopAllCoroutines();
-                    nextSentence();
-                }
+                //if (Input.GetKey(KeyCode.Space))
+                // {
+                //StopAllCoroutines();
+                nextSentence();
+               // }
                 //continueButton.SetActive(true);
             }
         }
@@ -53,6 +52,7 @@ public class Dialog : MonoBehaviour {
             textDisplay.text += letter;
             yield return new WaitForSeconds(typingSpeed);
         }
+        yield return new WaitForSeconds(2);
     }
 
 	public void nextSentence() {
@@ -69,6 +69,10 @@ public class Dialog : MonoBehaviour {
             StartCoroutine(Type());
         }
         else if (index == sentences.Length - 1)
+        {
+            canvas.SetActive(false);
+        }
+        else if (index == null)
         {
             canvas.SetActive(false);
         }
