@@ -33,6 +33,11 @@ public class Dialog : MonoBehaviour {
     {
         if(sentences.Length != 0)
         {
+            if (Input.GetKey(KeyCode.Space))
+            {
+                //StopAllCoroutines();
+                //nextSentence();
+            }
             if (textDisplay.text == sentences[index])
             {
                 //if (Input.GetKey(KeyCode.Space))
@@ -59,13 +64,13 @@ public class Dialog : MonoBehaviour {
         //source.Play();
         //textDisplayAnimator.SetTrigger("Change");
         canvas.SetActive(true);
-       // continueButton.SetActive(false);
-
-		if (index < sentences.Length - 1)
+        // continueButton.SetActive(false);
+        textDisplay.text = "";
+        if (index < sentences.Length - 1)
         {
             index++;
             textDisplay.text = "";
-            //StopAllCoroutines();
+            StopAllCoroutines();
             StartCoroutine(Type());
         }
         else if (index == sentences.Length - 1)
