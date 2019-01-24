@@ -8,8 +8,11 @@ public class Dialog : MonoBehaviour {
     public TextMeshProUGUI textDisplay;
     [TextArea(3, 10)]
     public string[] sentences;
+    [TextArea(3, 10)]
+    public string[] sentencesCensored;
     private int index;
     public float typingSpeed;
+    public bool censored = false;
 
     public GameObject canvas;
     
@@ -20,10 +23,21 @@ public class Dialog : MonoBehaviour {
     void Start () {
 
         //source.GetComponent<AudioSource>();
-        if (sentences.Length != 0)
+        if (!censored)
         {
-            canvas.SetActive(true);
-            StartCoroutine(Type());
+            if (sentences.Length != 0)
+            {
+                canvas.SetActive(true);
+                StartCoroutine(Type());
+            }
+        }
+        else
+        {
+            if (sentencesCensored.Length != 0)
+            {
+                canvas.SetActive(true);
+                StartCoroutine(Type());
+            }
         }
 
 	}
@@ -31,33 +45,68 @@ public class Dialog : MonoBehaviour {
     // Update is called once per frame
     private void Update()
     {
-        if(sentences.Length != 0)
+        if (!censored)
         {
-            if (Input.GetKey(KeyCode.Space))
+            if (sentences.Length != 0)
             {
-                //StopAllCoroutines();
-                //nextSentence();
+                if (Input.GetKey(KeyCode.Space))
+                {
+                    //StopAllCoroutines();
+                    //nextSentence();
+                }
+                if (textDisplay.text == sentences[index])
+                {
+                    //if (Input.GetKey(KeyCode.Space))
+                    // {
+                    //StopAllCoroutines();
+                    nextSentence();
+                    // }
+                    //continueButton.SetActive(true);
+                }
             }
-            if (textDisplay.text == sentences[index])
+        }
+        else
+        {
+            if (sentencesCensored.Length != 0)
             {
-                //if (Input.GetKey(KeyCode.Space))
-                // {
-                //StopAllCoroutines();
-                nextSentence();
-               // }
-                //continueButton.SetActive(true);
+                if (Input.GetKey(KeyCode.Space))
+                {
+                    //StopAllCoroutines();
+                    //nextSentence();
+                }
+                if (textDisplay.text == sentencesCensored[index])
+                {
+                    //if (Input.GetKey(KeyCode.Space))
+                    // {
+                    //StopAllCoroutines();
+                    nextSentence();
+                    // }
+                    //continueButton.SetActive(true);
+                }
             }
         }
     }
 
     IEnumerator Type()
     {
-        foreach(char letter in sentences[index].ToCharArray())
+        if (!censored)
         {
-            textDisplay.text += letter;
-            yield return new WaitForSeconds(typingSpeed);
+            foreach (char letter in sentences[index].ToCharArray())
+            {
+                textDisplay.text += letter;
+                yield return new WaitForSeconds(typingSpeed);
+            }
+            yield return new WaitForSeconds(2);
         }
-        yield return new WaitForSeconds(2);
+        else
+        {
+            foreach (char letter in sentencesCensored[index].ToCharArray())
+            {
+                textDisplay.text += letter;
+                yield return new WaitForSeconds(typingSpeed);
+            }
+            yield return new WaitForSeconds(2);
+        }
     }
 
 	public void nextSentence() {
@@ -66,25 +115,52 @@ public class Dialog : MonoBehaviour {
         canvas.SetActive(true);
         // continueButton.SetActive(false);
         textDisplay.text = "";
-        if (index < sentences.Length - 1)
+        if (!censored)
         {
-            index++;
-            textDisplay.text = "";
-            StopAllCoroutines();
-            StartCoroutine(Type());
-        }
-        else if (index == sentences.Length - 1)
-        {
-            canvas.SetActive(false);
-        }
-        else if (index == null)
-        {
-            canvas.SetActive(false);
+            if (index < sentences.Length - 1)
+            {
+                index++;
+                textDisplay.text = "";
+                StopAllCoroutines();
+                StartCoroutine(Type());
+            }
+            else if (index == sentences.Length - 1)
+            {
+                canvas.SetActive(false);
+            }
+            else if (index == null)
+            {
+                canvas.SetActive(false);
+            }
+            else
+            {
+                textDisplay.text = "";
+                //continueButton.SetActive(false);
+            }
         }
         else
         {
-            textDisplay.text = "";
-            //continueButton.SetActive(false);
+            if (index < sentencesCensored.Length - 1)
+            {
+                index++;
+                textDisplay.text = "";
+                StopAllCoroutines();
+                StartCoroutine(Type());
+            }
+            else if (index == sentencesCensored.Length - 1)
+            {
+                canvas.SetActive(false);
+            }
+            else if (index == null)
+            {
+                canvas.SetActive(false);
+            }
+            else
+            {
+                textDisplay.text = "";
+                //continueButton.SetActive(false);
+            }
         }
+        
 	}
 }
