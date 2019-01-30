@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641252, b: 0.574817, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5160,11 +5160,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4353203423545872, guid: 250b43e44a36bde48bf69e8609b2e80c, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -5.55
+      value: -6.091
       objectReference: {fileID: 0}
     - target: {fileID: 4353203423545872, guid: 250b43e44a36bde48bf69e8609b2e80c, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.75
+      value: -36.5
       objectReference: {fileID: 0}
     - target: {fileID: 4353203423545872, guid: 250b43e44a36bde48bf69e8609b2e80c, type: 2}
       propertyPath: m_LocalPosition.z
@@ -5192,7 +5192,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1743093358173078, guid: 250b43e44a36bde48bf69e8609b2e80c, type: 2}
       propertyPath: m_Name
-      value: Dialog Trigger
+      value: Weapon Dialog Trigger
       objectReference: {fileID: 0}
     - target: {fileID: 114817826234410424, guid: 250b43e44a36bde48bf69e8609b2e80c,
         type: 2}
@@ -5242,9 +5242,8 @@ Prefab:
     - target: {fileID: 114817826234410424, guid: 250b43e44a36bde48bf69e8609b2e80c,
         type: 2}
       propertyPath: sentences.Array.data[0]
-      value: 'I think that Calculator might suffice
-
-        as a weapon against the guard.'
+      value: "I think that Calculator on the desk\nmight suffice as a weapon \nagainst
+        the guard."
       objectReference: {fileID: 0}
     - target: {fileID: 114817826234410424, guid: 250b43e44a36bde48bf69e8609b2e80c,
         type: 2}
@@ -5252,6 +5251,36 @@ Prefab:
       value: '(Press F to attack guards when you have
 
         a weapon)'
+      objectReference: {fileID: 0}
+    - target: {fileID: 65872041254966712, guid: 250b43e44a36bde48bf69e8609b2e80c,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 5.9510117
+      objectReference: {fileID: 0}
+    - target: {fileID: 65872041254966712, guid: 250b43e44a36bde48bf69e8609b2e80c,
+        type: 2}
+      propertyPath: m_Center.y
+      value: 38.896305
+      objectReference: {fileID: 0}
+    - target: {fileID: 65872041254966712, guid: 250b43e44a36bde48bf69e8609b2e80c,
+        type: 2}
+      propertyPath: m_Center.z
+      value: 0.061855793
+      objectReference: {fileID: 0}
+    - target: {fileID: 65872041254966712, guid: 250b43e44a36bde48bf69e8609b2e80c,
+        type: 2}
+      propertyPath: m_Size.z
+      value: 2.745288
+      objectReference: {fileID: 0}
+    - target: {fileID: 65872041254966712, guid: 250b43e44a36bde48bf69e8609b2e80c,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 0.5064521
+      objectReference: {fileID: 0}
+    - target: {fileID: 65872041254966712, guid: 250b43e44a36bde48bf69e8609b2e80c,
+        type: 2}
+      propertyPath: m_Center.x
+      value: -0.07075477
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 250b43e44a36bde48bf69e8609b2e80c, type: 2}
