@@ -51,17 +51,16 @@ public class Dialog : MonoBehaviour {
             {
                 if (Input.GetKey(KeyCode.Space))
                 {
-                    //StopAllCoroutines();
-                    //nextSentence();
+                    StopAllCoroutines();
+                    nextSentence();
                 }
                 if (textDisplay.text == sentences[index])
                 {
-                    //if (Input.GetKey(KeyCode.Space))
-                    // {
-                    //StopAllCoroutines();
-                    nextSentence();
-                    // }
-                    //continueButton.SetActive(true);
+                    if (Input.GetKey(KeyCode.Space))
+                    {
+                        StopAllCoroutines();
+                        nextSentence();
+                    }
                 }
             }
         }
@@ -71,16 +70,16 @@ public class Dialog : MonoBehaviour {
             {
                 if (Input.GetKey(KeyCode.Space))
                 {
-                    //StopAllCoroutines();
-                    //nextSentence();
+                    StopAllCoroutines();
+                    nextSentence();
                 }
                 if (textDisplay.text == sentencesCensored[index])
                 {
-                    //if (Input.GetKey(KeyCode.Space))
-                    // {
-                    //StopAllCoroutines();
-                    nextSentence();
-                    // }
+                    if (Input.GetKey(KeyCode.Space))
+                    {
+                        StopAllCoroutines();
+                        nextSentence();
+                    }
                     //continueButton.SetActive(true);
                 }
             }
