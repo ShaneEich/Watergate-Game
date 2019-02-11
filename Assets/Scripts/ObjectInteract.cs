@@ -18,7 +18,13 @@ public class ObjectInteract : MonoBehaviour {
     public GameObject keyCard;
     public GameObject weapon;
     public GameObject file;
+    Animator anim;
 
+    private void Start()
+    {
+
+        anim = GetComponent<Animator>();
+    }
     public void CanInteract()
     {
         Debug.Log("Press E to Interact.");
@@ -27,7 +33,8 @@ public class ObjectInteract : MonoBehaviour {
     //open the elevator
     public void open()
     {
-        door.SetActive(false);      
+        anim.SetTrigger("OpenDoor");
+        //door.SetActive(false);      
     }
 
     //close the elevator
