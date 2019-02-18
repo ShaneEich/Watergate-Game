@@ -39,6 +39,7 @@ public class ObjectInteract : MonoBehaviour {
     public void open()
     {
         anim.SetTrigger("OpenDoor");
+        anim.Play("ElevatorOpen");
         //door.SetActive(false);      
     }
 
