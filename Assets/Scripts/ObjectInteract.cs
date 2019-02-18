@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class ObjectInteract : MonoBehaviour {
 
@@ -19,6 +21,10 @@ public class ObjectInteract : MonoBehaviour {
     public GameObject weapon;
     public GameObject file;
     Animator anim;
+
+    public Canvas noteCanvas;
+    public GameObject note;
+    public TextMeshProUGUI noteText;
 
     private void Start()
     {
@@ -62,5 +68,10 @@ public class ObjectInteract : MonoBehaviour {
     {
         file.SetActive(false);
         hasFile = true;
+    }
+
+    public void viewItem()
+    {
+        noteCanvas.enabled = true;
     }
 }
