@@ -13,6 +13,8 @@ public class ObjectInteract : MonoBehaviour {
     public bool hasWeapon;
     public bool hasFile;
     public bool canInteract;
+    public bool hasClue;
+
 
     //create game objects used in this script
     public GameObject Player;
@@ -22,13 +24,10 @@ public class ObjectInteract : MonoBehaviour {
     public GameObject file;
     Animator anim;
 
-    public Canvas noteCanvas;
-    public GameObject note;
-    public TextMeshProUGUI noteText;
+
 
     private void Start()
     {
-
         anim = GetComponent<Animator>();
     }
     public void CanInteract()
@@ -70,8 +69,6 @@ public class ObjectInteract : MonoBehaviour {
         hasFile = true;
     }
 
-    public void viewItem()
-    {
-        noteCanvas.enabled = true;
-    }
+
+
 }
