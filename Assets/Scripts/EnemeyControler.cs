@@ -7,10 +7,12 @@ public class EnemeyControler : MonoBehaviour
 {
     public float lookRadius = 10f; //radius around enemy AI 
     int count = 0;
-    Transform target; // position of player
+    Transform target;
+    Transform goal;
+    // position of player
     public Transform[] points;
     private int destPoint = 0;
-    private NavMeshAgent agent;
+    public NavMeshAgent agent;
 
 
     // Start is called before the first frame update
@@ -42,15 +44,22 @@ public class EnemeyControler : MonoBehaviour
 
         if (distance <= lookRadius)
         {
+            agent.speed = 4wd;
             agent.SetDestination(target.position);
             if (distance <= agent.stoppingDistance)
             {
+                Debug.Log("Close to point");
                 FaceTarget();
+                Debug.Log("Go to next point");
             }
         }
 
-        if (!agent.pathPending && agent.remainingDistance < 0.5f)
+        if (!agent.pathPending && agent.remainingDistance < 0.1f)
+        {
+            //FaceTarget();
+            agent.speed = 3;
             GotoNextPoint();
+        }
     }
     void FaceTarget()
     {
@@ -58,6 +67,9 @@ public class EnemeyControler : MonoBehaviour
         Quaternion lookRotation = Quaternion.LookRotation(new Vector3(direction.x, 0, direction.z));
         transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * 5f);
     }
+
+  
+
 
     void OnDrawGizmosSelected()
     {

@@ -125,9 +125,9 @@ namespace PolyToolkitInternal.api_clients.poly_client {
     /// </summary>
     private static string MakeSearchUrl(PolyListAssetsRequest listAssetsRequest) {
       StringBuilder sb = new StringBuilder();
-      sb.Append(BASE_URL)
-        .Append("/v1/assets")
-        .AppendFormat("?key={0}", WWW.EscapeURL(PolyMainInternal.Instance.apiKey));
+            sb.Append(BASE_URL)
+              .Append("/v1/assets");
+        //.AppendFormat("?key={0}", WWW.EscapeURL(PolyMainInternal.Instance.apiKey));
       
       if (listAssetsRequest.formatFilter != null) {
         sb.AppendFormat("&format={0}", WWW.EscapeURL(FORMAT_FILTER[listAssetsRequest.formatFilter.Value]));
