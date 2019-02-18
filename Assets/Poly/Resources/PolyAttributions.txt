@@ -132,6 +132,12 @@ URL: https://poly.google.com/view/2MeX_6NA2W4
 License: Creative Commons CC-BY
 https://creativecommons.org/licenses/by/3.0/legalcode
 
+Title: Security Keypad
+Author: Bruno Oliveira
+URL: https://poly.google.com/view/bMX7za_ikof
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
 Title: Simple computer
 Author: Robert Schlyter
 URL: https://poly.google.com/view/doMMnviJrGi
@@ -153,12 +159,6 @@ https://creativecommons.org/licenses/by/3.0/legalcode
 Title: Table
 Author: Syl Joly (syljoly)
 URL: https://poly.google.com/view/e7kBP4_EnBI
-License: Creative Commons CC-BY
-https://creativecommons.org/licenses/by/3.0/legalcode
-
-Title: thrasher skateboard magazine
-Author: Jeremy Eyring
-URL: https://poly.google.com/view/fhIJWrqEaj2
 License: Creative Commons CC-BY
 https://creativecommons.org/licenses/by/3.0/legalcode
 
