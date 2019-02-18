@@ -44,7 +44,7 @@ public class EnemeyControler : MonoBehaviour
 
         if (distance <= lookRadius)
         {
-            agent.speed = 4wd;
+            agent.speed = 4f;
             agent.SetDestination(target.position);
             if (distance <= agent.stoppingDistance)
             {
