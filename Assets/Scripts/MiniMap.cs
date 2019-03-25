@@ -13,14 +13,20 @@ public class MiniMap : MonoBehaviour {
 
 	void Update ()
 	{
-		movement.z = Input.GetAxis("Vertical") * speed * Time.deltaTime;
-		rotation = Input.GetAxis("Horizontal") * rotateSpeed * Time.deltaTime;
+
+        //movement.x = player.transform.position.x - transform.position.x;
+        //movement.z = player.transform.position.z - transform.position.z;
+        movement.z = Input.GetAxis("Vertical")*.5f;
+        movement.x = Input.GetAxis("Horizontal")*.5f;
+        movement.y = 0;
+        rotation = Input.GetAxis("Mouse X")* rotateSpeed;
+        
 	}
 
 	void FixedUpdate ()
 	{
-		transform.Translate(movement, Space.Self);
-		transform.Rotate(0f, rotation, 0f);
+		transform.Translate(movement, Space.World);
+		transform.Rotate(0f, 0f, rotation);
 	}
 	
 }
