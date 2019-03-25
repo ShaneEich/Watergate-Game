@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class MiniMap : MonoBehaviour {
 
+    public Transform player;
 	public float speed = 10f;
 	public float rotateSpeed = 10f;
 
