@@ -33,7 +33,7 @@ public class PlayerController : MonoBehaviour
         float horizontalMovement = Input.GetAxisRaw("Horizontal");
         float verticalMovement = Input.GetAxisRaw("Vertical");
         Crouch();
-        Sprint();
+        //Sprint();
         moveDirection = (horizontalMovement * transform.right + verticalMovement * transform.forward).normalized;
     }
 
@@ -59,7 +59,7 @@ public class PlayerController : MonoBehaviour
             }
         }
     }
-    void Sprint()
+    /*void Sprint()
     {
         if (Input.GetButtonDown("Sprint") && !crouched)
         {
@@ -76,7 +76,7 @@ public class PlayerController : MonoBehaviour
                 Debug.Log("Walking");
             }
         }
-    }
+    }*/
     void Move()
     {
         if (!crouched)
