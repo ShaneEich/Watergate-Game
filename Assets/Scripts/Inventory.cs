@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
+    private bool current = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -13,16 +14,18 @@ public class Inventory : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        OpenOrClose();
+    }
+
+    public void OpenOrClose()
+    {
         if (Input.GetKeyDown(KeyCode.I))
         {
-            //set inventory GUI to inactive
-            gameObject.SetActive(false);
-        }
-
-        if (Input.GetKeyDown(KeyCode.O))
-        {
-            //set inventory GUI to active
-            gameObject.SetActive(true);
+            Debug.Log(current);
+            current = !current;
+            //set inventory GUI to inactive/active by preessing 'I'
+            gameObject.SetActive(current);
+            Debug.Log(current);
         }
     }
 }
