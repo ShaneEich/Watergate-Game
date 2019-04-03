@@ -11,7 +11,7 @@ public class PlayerSprint : MonoBehaviour
 
     Rect staminaRect;
     Texture2D staminaTexture;
-    Color newColor = new Color(255/255f, 140/255f, 40/255f, 1f);
+    Color newColor = new Color(255/255f, 100/255f, 30/255f, .4f);
     
     void Start()
     {
@@ -56,7 +56,7 @@ public class PlayerSprint : MonoBehaviour
     void OnGUI()
     {
         float ratio = stamina / maxStamina;
-        float rectWidth = ratio * Screen.width / 85;
+        //float rectWidth = ratio * Screen.width / 85;
         float rectHeight = ratio * -Screen.height / 4;
         staminaRect.height = rectHeight;
         GUI.DrawTexture(staminaRect, staminaTexture);
