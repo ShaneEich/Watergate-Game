@@ -503,7 +503,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventoryGUI: {fileID: 967457781529255081}
-  space: 10
+  space: 12
   items: []
 --- !u!1 &967457780681805816
 GameObject:
@@ -923,8 +923,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -28979.578, y: 6043.811}
-  m_SizeDelta: {x: 415, y: 1961}
+  m_AnchoredPosition: {x: -20879.666, y: 1463.554}
+  m_SizeDelta: {x: 1323, y: 274}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &967457781108685356
 Canvas:
@@ -1077,7 +1077,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &967457781529255080
 RectTransform:
   m_ObjectHideFlags: 0
