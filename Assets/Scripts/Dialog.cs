@@ -49,7 +49,7 @@ public class Dialog : MonoBehaviour {
         {
             if (sentences.Length != 0)
             {
-                if (Input.GetKey(KeyCode.Space))
+                if (Input.GetKey(KeyCode.X))
                 {
                     StopAllCoroutines();
                     nextSentence();
@@ -68,7 +68,7 @@ public class Dialog : MonoBehaviour {
         {
             if (sentencesCensored.Length != 0)
             {
-                if (Input.GetKey(KeyCode.Space))
+                if (Input.GetKey(KeyCode.X))
                 {
                     StopAllCoroutines();
                     nextSentence();
