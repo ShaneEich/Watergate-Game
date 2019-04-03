@@ -11,17 +11,17 @@ public class PlayerSprint : MonoBehaviour
 
     Rect staminaRect;
     Texture2D staminaTexture;
-
-
+    Color newColor = new Color(255/255f, 140/255f, 40/255f, 1f);
+    
     void Start()
     {
         pc = gameObject.GetComponent<PlayerController>();
         walkSpeed = pc.walkSpeed;
         runSpeed = walkSpeed * 2.5f;
 
-        staminaRect = new Rect(Screen.width / 10, Screen.height * 9 / 10, Screen.width / 3, Screen.height / 50);
+        staminaRect = new Rect(Screen.width / 85, Screen.height * .95f, Screen.width / 85, -Screen.height / 4);
         staminaTexture = new Texture2D(1, 1);
-        staminaTexture.SetPixel(0, 0, Color.white);
+        staminaTexture.SetPixel(0, 0, newColor);
         staminaTexture.Apply();
 
     }
@@ -56,8 +56,9 @@ public class PlayerSprint : MonoBehaviour
     void OnGUI()
     {
         float ratio = stamina / maxStamina;
-        float rectWidth = ratio * Screen.width / 3;
-        staminaRect.width = rectWidth;
+        float rectWidth = ratio * Screen.width / 85;
+        float rectHeight = ratio * -Screen.height / 4;
+        staminaRect.height = rectHeight;
         GUI.DrawTexture(staminaRect, staminaTexture);
 
     }
