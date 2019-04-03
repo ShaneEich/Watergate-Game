@@ -24,6 +24,7 @@ public class AICombat : MonoBehaviour {
         {
             Scene scene = SceneManager.GetActiveScene();
             SceneManager.LoadScene(scene.name);
+
         }
     }
 }

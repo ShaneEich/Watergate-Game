@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.SceneManagement;
 
 public class EnemeyControler : MonoBehaviour
 {
@@ -49,6 +50,8 @@ public class EnemeyControler : MonoBehaviour
             if (distance <= agent.stoppingDistance)
             {
                 Debug.Log("Close to point");
+                Scene scene = SceneManager.GetActiveScene();
+                SceneManager.LoadScene(scene.name);
                 FaceTarget();
                 Debug.Log("Go to next point");
             }
