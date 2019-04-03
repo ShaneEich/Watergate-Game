@@ -56,54 +56,55 @@ public class Keypad : MonoBehaviour
                 GUI.Box(new Rect(0, 0, 320, 455), "");
                 GUI.Box(new Rect(5, 5, 310, 25), input);
 
-                if (GUI.Button(new Rect(5, 35, 100, 100), "7"))
+                //make the GUI buttons and get inputs for the keypad
+                if (GUI.Button(new Rect(110, 350, 100, 100), "0") || Input.GetKeyDown(KeyCode.Keypad0) || Input.GetKeyDown(KeyCode.Alpha0))
                 {
-                    input = input + "7";
+                    input = input + "0";
                 }
 
-                if (GUI.Button(new Rect(110, 35, 100, 100), "8"))
-                {
-                    input = input + "8";
-                }
-
-                if (GUI.Button(new Rect(215, 35, 100, 100), "9"))
-                {
-                    input = input + "9";
-                }
-
-                if (GUI.Button(new Rect(5, 140, 100, 100), "4"))
-                {
-                    input = input + "4";
-                }
-
-                if (GUI.Button(new Rect(110, 140, 100, 100), "5"))
-                {
-                    input = input + "5";
-                }
-
-                if (GUI.Button(new Rect(215, 140, 100, 100), "6"))
-                {
-                    input = input + "6";
-                }
-
-                if (GUI.Button(new Rect(5, 245, 100, 100), "1"))
+                if (GUI.Button(new Rect(5, 245, 100, 100), "1") || Input.GetKeyDown(KeyCode.Keypad1) || Input.GetKeyDown(KeyCode.Alpha1))
                 {
                     input = input + "1";
                 }
 
-                if (GUI.Button(new Rect(110, 245, 100, 100), "2"))
+                if (GUI.Button(new Rect(110, 245, 100, 100), "2") || Input.GetKeyDown(KeyCode.Keypad2) || Input.GetKeyDown(KeyCode.Alpha2))
                 {
                     input = input + "2";
                 }
 
-                if (GUI.Button(new Rect(215, 245, 100, 100), "3"))
+                if (GUI.Button(new Rect(215, 245, 100, 100), "3") || Input.GetKeyDown(KeyCode.Keypad3) || Input.GetKeyDown(KeyCode.Alpha3))
                 {
                     input = input + "3";
                 }
 
-                if (GUI.Button(new Rect(110, 350, 100, 100), "0"))
+                if (GUI.Button(new Rect(5, 140, 100, 100), "4") || Input.GetKeyDown(KeyCode.Keypad4) || Input.GetKeyDown(KeyCode.Alpha4))
                 {
-                    input = input + "0";
+                    input = input + "4";
+                }
+
+                if (GUI.Button(new Rect(110, 140, 100, 100), "5") || Input.GetKeyDown(KeyCode.Keypad5) || Input.GetKeyDown(KeyCode.Alpha5))
+                {
+                    input = input + "5";
+                }
+
+                if (GUI.Button(new Rect(215, 140, 100, 100), "6") || Input.GetKeyDown(KeyCode.Keypad6) || Input.GetKeyDown(KeyCode.Alpha6))
+                {
+                    input = input + "6";
+                }
+
+                if (GUI.Button(new Rect(5, 35, 100, 100), "7") || Input.GetKeyDown(KeyCode.Keypad7) || Input.GetKeyDown(KeyCode.Alpha7))
+                {
+                    input = input + "7";
+                }
+
+                if (GUI.Button(new Rect(110, 35, 100, 100), "8") || Input.GetKeyDown(KeyCode.Keypad8) || Input.GetKeyDown(KeyCode.Alpha8))
+                {
+                    input = input + "8";
+                }
+
+                if (GUI.Button(new Rect(215, 35, 100, 100), "9") || Input.GetKeyDown(KeyCode.Keypad9) || Input.GetKeyDown(KeyCode.Alpha9))
+                {
+                    input = input + "9";
                 }
             }
         }
