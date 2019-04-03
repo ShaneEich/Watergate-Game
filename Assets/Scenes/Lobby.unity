@@ -2029,6 +2029,7 @@ MonoBehaviour:
   keyCard: {fileID: 367331079}
   weapon: {fileID: 0}
   file: {fileID: 0}
+  anim: {fileID: 0}
 --- !u!1001 &372686011
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3337,6 +3338,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114294728961657556, guid: 91091ecc0f682fb40a117a02645dd490,
+        type: 3}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 941220316}
     - target: {fileID: 114255339580479586, guid: 91091ecc0f682fb40a117a02645dd490,
         type: 3}
       propertyPath: Player
@@ -3556,7 +3562,7 @@ Animator:
   m_GameObject: {fileID: 717022886}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: a1a3b38708c2f8a47b4e4f355e5706cb, type: 2}
+  m_Controller: {fileID: 9100000, guid: 783f9f8ec72272241a99c278269a7068, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -8945,6 +8951,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: MiniMap
       objectReference: {fileID: 0}
+    - target: {fileID: 7648137438235932332, guid: a9801346efc040b4d9b9fb1b0895a24a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7648137436855432591, guid: a9801346efc040b4d9b9fb1b0895a24a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9068,11 +9079,6 @@ PrefabInstance:
     - target: {fileID: 7648137438179204704, guid: a9801346efc040b4d9b9fb1b0895a24a,
         type: 3}
       propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7648137438235932332, guid: a9801346efc040b4d9b9fb1b0895a24a,
-        type: 3}
-      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
