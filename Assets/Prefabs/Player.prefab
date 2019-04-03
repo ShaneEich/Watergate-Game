@@ -412,7 +412,6 @@ GameObject:
   - component: {fileID: 5642580333210691258}
   - component: {fileID: 3209550153023439475}
   - component: {fileID: 5402064770524010395}
-  - component: {fileID: 1845608981}
   m_Layer: 13
   m_Name: MiniMapCam
   m_TagString: Untagged
@@ -484,20 +483,3 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1615778979117914592}
   m_Enabled: 1
---- !u!1818360609 &1845608981
-RotationConstraint:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1615778979117914592}
-  m_Enabled: 1
-  m_Weight: 1
-  m_RotationAtRest: {x: 90, y: 0, z: 0}
-  m_RotationOffset: {x: 0, y: 0, z: 0}
-  m_AffectRotationX: 1
-  m_AffectRotationY: 1
-  m_AffectRotationZ: 1
-  m_IsContraintActive: 0
-  m_IsLocked: 0
-  m_Sources: []

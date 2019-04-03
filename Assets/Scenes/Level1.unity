@@ -3723,6 +3723,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1536191313902328, guid: 6ee67f40e73cbc449ad690701793e7c5, type: 3}
+      propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 4226164739192820, guid: 6ee67f40e73cbc449ad690701793e7c5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -18.21
@@ -3755,6 +3759,18 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 4226164739192820, guid: 6ee67f40e73cbc449ad690701793e7c5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4226164739192820, guid: 6ee67f40e73cbc449ad690701793e7c5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4226164739192820, guid: 6ee67f40e73cbc449ad690701793e7c5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 114063293983358858, guid: 6ee67f40e73cbc449ad690701793e7c5,
         type: 3}
       propertyPath: keyCard
@@ -3770,11 +3786,6 @@ PrefabInstance:
       propertyPath: file
       value: 
       objectReference: {fileID: 2020422636}
-    - target: {fileID: 20966184995083566, guid: 6ee67f40e73cbc449ad690701793e7c5,
-        type: 3}
-      propertyPath: m_HDR
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6ee67f40e73cbc449ad690701793e7c5, type: 3}
 --- !u!1 &745351234
@@ -4066,11 +4077,6 @@ PrefabInstance:
     - target: {fileID: 7648137436855432591, guid: a9801346efc040b4d9b9fb1b0895a24a,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7648137437759707004, guid: a9801346efc040b4d9b9fb1b0895a24a,
-        type: 3}
-      propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
