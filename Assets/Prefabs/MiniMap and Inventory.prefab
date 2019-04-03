@@ -415,7 +415,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 121.5, y: -117}
+  m_AnchoredPosition: {x: 1949, y: -117}
   m_SizeDelta: {x: 175, y: 175}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7648137436783060369
@@ -465,7 +465,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7648137436855432591}
   m_Layer: 0
-  m_Name: MiniMap
+  m_Name: MiniMap and Inventory
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1513,6 +1513,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7648137438235932333}
   - component: {fileID: 7648137438235932330}
+  - component: {fileID: 8844720650410104301}
   m_Layer: 5
   m_Name: Inventory
   m_TagString: Untagged
@@ -1537,7 +1538,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 589.5, y: -50}
+  m_AnchoredPosition: {x: 884, y: -84}
   m_SizeDelta: {x: 2246.1, y: 1765.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7648137438235932330
@@ -1548,3 +1549,15 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7648137438235932332}
   m_CullTransparentMesh: 0
+--- !u!114 &8844720650410104301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7648137438235932332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ef54e621625b484fb2f682729055241, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
