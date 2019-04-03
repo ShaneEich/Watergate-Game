@@ -6090,6 +6090,11 @@ PrefabInstance:
       propertyPath: m_isInputParsingRequired
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 287675466493357721, guid: 45a20a912f9aba74a84a61293b609559,
+        type: 3}
+      propertyPath: inventoryGUI
+      value: 
+      objectReference: {fileID: 1717710534}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 45a20a912f9aba74a84a61293b609559, type: 3}
 --- !u!1 &1349731504
@@ -7858,6 +7863,12 @@ Transform:
   m_Father: {fileID: 844012420}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1717710534 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 967457781529255081, guid: 45a20a912f9aba74a84a61293b609559,
+    type: 3}
+  m_PrefabInstance: {fileID: 1345209454}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1731938660 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4272926786094392, guid: bc46577c91c44d049a123ec1d126cb12,

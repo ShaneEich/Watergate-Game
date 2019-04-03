@@ -23,8 +23,8 @@ public class ObjectInteract : MonoBehaviour {
     public GameObject weapon;
     public GameObject file;
     public Animator anim;
+    private Item item;   // Item to put in the inventory if picked up
 
-    
 
     private void Start()
     {
@@ -59,6 +59,7 @@ public class ObjectInteract : MonoBehaviour {
     {
         keyCard.SetActive(false);
         hasKey = true;
+        Inventory.instance.Add(this.item);	// Add to inventory
     }
 
     //pick up the weapon
@@ -66,6 +67,7 @@ public class ObjectInteract : MonoBehaviour {
     {
         weapon.SetActive(false);
         hasWeapon = true;
+        Inventory.instance.Add(this.item);	// Add to inventory
     }
 
     //pick up the file
@@ -73,6 +75,7 @@ public class ObjectInteract : MonoBehaviour {
     {
         file.SetActive(false);
         hasFile = true;
+        Inventory.instance.Add(this.item);	// Add to inventory
     }
 
 
