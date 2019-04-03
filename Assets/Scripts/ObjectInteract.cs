@@ -24,11 +24,11 @@ public class ObjectInteract : MonoBehaviour {
     public GameObject file;
     public Animator anim;
 
-    GameObject Door;
+   
 
-    void Start()
+    private void Start()
     {
-        anim = Door.GetComponent<Animator>();
+        anim = GetComponent<Animator>();
         Debug.Log("anim loaded");
     }
     public void CanInteract()
