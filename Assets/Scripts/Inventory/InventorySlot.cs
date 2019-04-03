@@ -8,7 +8,6 @@ using UnityEngine.EventSystems;
 public class InventorySlot : MonoBehaviour {
 
 	public Image icon;
-	public Button removeButton;
 
 	Item item;	// Current item in the slot
 
@@ -19,7 +18,6 @@ public class InventorySlot : MonoBehaviour {
 
 		icon.sprite = item.icon;
 		icon.enabled = true;
-		removeButton.interactable = true;
 	}
 
 	// Clear the slot
@@ -29,7 +27,6 @@ public class InventorySlot : MonoBehaviour {
 
 		icon.sprite = null;
 		icon.enabled = false;
-		removeButton.interactable = false;
 	}
 
 	// If the remove button is pressed, this function will be called.

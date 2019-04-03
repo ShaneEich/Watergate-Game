@@ -18,73 +18,56 @@ public class Inventory : MonoBehaviour {
 	public delegate void OnItemChanged();
 	public OnItemChanged onItemChangedCallback;
 
-    public GameObject inventoryGUI;
-    Inventory inventory;	// Our current inventory
-    private bool currentState = false;
+    // public GameObject inventoryGUI;
+    //private bool currentState = false;
 
-    public int space = 10;	// Amount of item spaces
+    Inventory inventory;	// Our current inventory
+    public int space = 12;	// Amount of item spaces
 
 	// Our current list of items in the inventory
 	public List<Item> items = new List<Item>();
 
-    private void Update()
-    {
-        UpdateUI();
-    }
+    //private void Update()
+    //{
+        
+    //}
            
-    void LateUpdate()
-    {
-        OpenOrClose(currentState);
-    }
+    //void LateUpdate()
+    //{
+    //    OpenOrClose(currentState);
+    //}
 
-    //method to set the inventory GUI to active by preessing 'I'
-    public void Open()
-    {
-        if (Input.GetKeyDown(KeyCode.I))
-        {
-            inventoryGUI.SetActive(true);
-        }
-    }
+    ////method to set the inventory GUI to active by preessing 'I'
+    //public void Open()
+    //{
+    //    if (Input.GetKeyDown(KeyCode.I))
+    //    {
+    //        inventoryGUI.SetActive(true);
+    //    }
+    //}
 
-    //method to set the inventory GUI to inactive by preessing 'I'
-    public void Close()
-    {
-        if (Input.GetKeyDown(KeyCode.I))
-        {
-            inventoryGUI.SetActive(false);
-        }
-    }
+    ////method to set the inventory GUI to inactive by preessing 'I'
+    //public void Close()
+    //{
+    //    if (Input.GetKeyDown(KeyCode.I))
+    //    {
+    //        inventoryGUI.SetActive(false);
+    //    }
+    //}
 
-    public void OpenOrClose(bool state)
-    {
-        state = !currentState;
-        currentState = state;
-        if (state == true)
-        {
-            Open();
-        }
-        if (state == false)
-        {
-            Close();
-        }
-    }
-
-    public void UpdateUI()
-    {
-        InventorySlot[] slots = GetComponentsInChildren<InventorySlot>();
-
-        for (int i = 0; i < slots.Length; i++)
-        {
-            if (i < inventory.items.Count)
-            {
-                slots[i].AddItem(inventory.items[i]);
-            }
-            else
-            {
-                slots[i].ClearSlot();
-            }
-        }
-    }
+    //public void OpenOrClose(bool state)
+    //{
+    //    state = !currentState;
+    //    currentState = state;
+    //    if (state == true)
+    //    {
+    //        Open();
+    //    }
+    //    if (state == false)
+    //    {
+    //        Close();
+    //    }
+    //}
 
     // Add a new item if enough room
     public void Add (Item item)
