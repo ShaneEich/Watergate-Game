@@ -2784,7 +2784,7 @@ GameObject:
   - component: {fileID: 551660199}
   - component: {fileID: 551660198}
   - component: {fileID: 551660197}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8483,6 +8483,22 @@ PrefabInstance:
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1522087514773268, guid: 01a4a9f185a45b243842ac58e5957650, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1522087514773268, guid: 01a4a9f185a45b243842ac58e5957650, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1509431214432136, guid: 01a4a9f185a45b243842ac58e5957650, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1509431214432136, guid: 01a4a9f185a45b243842ac58e5957650, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4355074292954936, guid: 01a4a9f185a45b243842ac58e5957650, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -8506,22 +8522,6 @@ PrefabInstance:
     - target: {fileID: 4355074292954936, guid: 01a4a9f185a45b243842ac58e5957650, type: 3}
       propertyPath: m_LocalPosition.x
       value: 14.48
-      objectReference: {fileID: 0}
-    - target: {fileID: 1522087514773268, guid: 01a4a9f185a45b243842ac58e5957650, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 1522087514773268, guid: 01a4a9f185a45b243842ac58e5957650, type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1509431214432136, guid: 01a4a9f185a45b243842ac58e5957650, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 1509431214432136, guid: 01a4a9f185a45b243842ac58e5957650, type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 01a4a9f185a45b243842ac58e5957650, type: 3}
