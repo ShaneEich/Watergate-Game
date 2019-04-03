@@ -14,19 +14,28 @@ public class MiniMap : MonoBehaviour {
 	void Update ()
 	{
 
-        //movement.x = player.transform.position.x - transform.position.x;
-        //movement.z = player.transform.position.z - transform.position.z;
-        movement.z = Input.GetAxis("Vertical")*.5f;
-        movement.x = Input.GetAxis("Horizontal")*.5f;
-        movement.y = 0;
-        rotation = Input.GetAxis("Mouse X")* rotateSpeed;
+ //       movement.x = player.transform.position.x - transform.position.x;
+ //       movement.z = player.transform.position.z - transform.position.z;
+ //       movement.z = Input.GetAxis("Vertical")*.5f;
+ //       movement.x = Input.GetAxis("Horizontal")*.5f;
+ //       movement.y = 0;
+ //       rotation = Input.GetAxis("Mouse X")* rotateSpeed;
         
 	}
 
-	void FixedUpdate ()
-	{
-		transform.Translate(movement, Space.World);
-		transform.Rotate(0f, 0f, rotation);
-	}
+    void LateUpdate()
+    {
+        Vector3 newPosition = player.position;
+        newPosition.y = transform.position.y;
+        transform.position = newPosition;
+
+        transform.rotation = Quaternion.Euler(90f, player.eulerAngles.y, 0f);
+    }
+
+ //   void FixedUpdate ()
+	//{
+	//	transform.Translate(movement, Space.World);
+	//	transform.Rotate(0f, 0f, rotation);
+	//}
 	
 }
