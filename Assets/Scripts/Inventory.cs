@@ -4,28 +4,50 @@ using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
-    private bool current = false;
+    public GameObject inventory;
+    private bool currentState = false;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
-    // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
-        OpenOrClose();
+        OpenOrClose(currentState);
     }
 
-    public void OpenOrClose()
+    //method to set the inventory GUI to active by preessing 'I'
+    public void Open()
     {
         if (Input.GetKeyDown(KeyCode.I))
         {
-            Debug.Log(current);
-            current = !current;
-            //set inventory GUI to inactive/active by preessing 'I'
-            gameObject.SetActive(current);
-            Debug.Log(current);
+            inventory.SetActive(true);
         }
     }
+
+    //method to set the inventory GUI to inactive by preessing 'I'
+    public void Close()
+    {
+        if (Input.GetKeyDown(KeyCode.I))
+        {
+            inventory.SetActive(false);
+        }
+    }
+
+    public void OpenOrClose(bool state)
+    {
+        state = !currentState;
+        currentState = state;
+        if (state == true)
+        {
+            Open();
+        }
+        if (state == false)
+        {
+            Close();
+        }
+    }
+       
 }
