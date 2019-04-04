@@ -891,6 +891,21 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1593684994}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &210176051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 210176049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef210585ddf119d48ba06f159731cdde, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Keycard
+  icon: {fileID: 21300000, guid: a651bddea8bf77c448157273631b65be, type: 3}
+  showInInventory: 1
 --- !u!1001 &229118326
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5206,6 +5221,21 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 590129176}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1122801881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1122801880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef210585ddf119d48ba06f159731cdde, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Calculator
+  icon: {fileID: 21300000, guid: a651bddea8bf77c448157273631b65be, type: 3}
+  showInInventory: 1
 --- !u!1001 &1189699731
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8302,6 +8332,21 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 2123774875}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2020422637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2020422636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef210585ddf119d48ba06f159731cdde, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Intel
+  icon: {fileID: 21300000, guid: a651bddea8bf77c448157273631b65be, type: 3}
+  showInInventory: 1
 --- !u!4 &2058833663 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4723248023394784, guid: 0a3ffc1570929fa40810cdc5580b36cc,

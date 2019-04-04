@@ -21,6 +21,7 @@ public class Clue : MonoBehaviour
     {
         noteCanvas.SetActive(false);
         noteText.text = "";
+        onTrigger = false;
     }
 
 
