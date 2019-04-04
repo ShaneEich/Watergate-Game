@@ -3009,6 +3009,18 @@ PrefabInstance:
       propertyPath: file
       value: 
       objectReference: {fileID: 2020422636}
+    - target: {fileID: 1122801882, guid: c9e8c92ac908907499522e06386a357a, type: 3}
+      propertyPath: keyCardItem
+      value: 
+      objectReference: {fileID: 210176051}
+    - target: {fileID: 1122801882, guid: c9e8c92ac908907499522e06386a357a, type: 3}
+      propertyPath: weaponItem
+      value: 
+      objectReference: {fileID: 1122801881}
+    - target: {fileID: 1122801882, guid: c9e8c92ac908907499522e06386a357a, type: 3}
+      propertyPath: fileItem
+      value: 
+      objectReference: {fileID: 2020422637}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c9e8c92ac908907499522e06386a357a, type: 3}
 --- !u!1 &594133649
@@ -6189,6 +6201,11 @@ PrefabInstance:
       propertyPath: file
       value: 
       objectReference: {fileID: 2020422636}
+    - target: {fileID: 114952301695632824, guid: ee7ca52e9e762be4395bf2dc3a69e2c1,
+        type: 3}
+      propertyPath: keyCardItem
+      value: 
+      objectReference: {fileID: 210176051}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ee7ca52e9e762be4395bf2dc3a69e2c1, type: 3}
 --- !u!1 &1596344674
@@ -8601,6 +8618,10 @@ PrefabInstance:
       propertyPath: weapon
       value: 
       objectReference: {fileID: 1122801880}
+    - target: {fileID: 2020422638, guid: ac1c3c09f32f20540a0ccea0784a0b68, type: 3}
+      propertyPath: fileItem
+      value: 
+      objectReference: {fileID: 2020422637}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ac1c3c09f32f20540a0ccea0784a0b68, type: 3}
 --- !u!1001 &2126581763

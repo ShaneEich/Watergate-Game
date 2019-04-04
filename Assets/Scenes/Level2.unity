@@ -3521,6 +3521,10 @@ PrefabInstance:
       propertyPath: Player
       value: 
       objectReference: {fileID: 9119400485378186794}
+    - target: {fileID: 1122801882, guid: c9e8c92ac908907499522e06386a357a, type: 3}
+      propertyPath: weaponItem
+      value: 
+      objectReference: {fileID: 1122801883}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c9e8c92ac908907499522e06386a357a, type: 3}
 --- !u!1001 &612449461
@@ -4405,6 +4409,10 @@ PrefabInstance:
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2020422638, guid: ac1c3c09f32f20540a0ccea0784a0b68, type: 3}
+      propertyPath: fileItem
+      value: 
+      objectReference: {fileID: 751006977}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ac1c3c09f32f20540a0ccea0784a0b68, type: 3}
 --- !u!4 &751006973 stripped
@@ -5579,6 +5587,10 @@ PrefabInstance:
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2020422638, guid: ac1c3c09f32f20540a0ccea0784a0b68, type: 3}
+      propertyPath: fileItem
+      value: 
+      objectReference: {fileID: 968752882}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ac1c3c09f32f20540a0ccea0784a0b68, type: 3}
 --- !u!4 &968752878 stripped
@@ -5909,35 +5921,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 15.90799, y: 1, z: 31.91251}
   m_Center: {x: -1.8143688, y: -0.00000006686966, z: -3.4054093}
---- !u!114 &1122801882
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1122801880}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d44668dad10fb24ab615b5485a8e78a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  openDoor: 0
-  closeDoor: 0
-  hasKey: 0
-  hasWeapon: 1
-  hasFile: 0
-  canInteract: 0
-  hasClue: 0
-  Player: {fileID: 0}
-  door: {fileID: 148171477}
-  keyCard: {fileID: 210176049}
-  weapon: {fileID: 1122801880}
-  file: {fileID: 2020422636}
-  doorItem: {fileID: 0}
-  keyCardItem: {fileID: 0}
-  weaponItem: {fileID: 0}
-  fileItem: {fileID: 0}
-  anim: {fileID: 0}
 --- !u!114 &1122801883
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7174,6 +7157,11 @@ PrefabInstance:
       propertyPath: file
       value: 
       objectReference: {fileID: 2020422636}
+    - target: {fileID: 114952301695632824, guid: ee7ca52e9e762be4395bf2dc3a69e2c1,
+        type: 3}
+      propertyPath: keyCardItem
+      value: 
+      objectReference: {fileID: 210176051}
     - target: {fileID: 65723724874267346, guid: ee7ca52e9e762be4395bf2dc3a69e2c1,
         type: 3}
       propertyPath: m_Size.x
@@ -9222,35 +9210,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.37773517, y: 0.11611084, z: 1}
   m_Center: {x: -0.31113052, y: -0.4419388, z: -0.00000012279733}
---- !u!114 &2020422638
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2020422636}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d44668dad10fb24ab615b5485a8e78a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  openDoor: 0
-  closeDoor: 0
-  hasKey: 0
-  hasWeapon: 0
-  hasFile: 1
-  canInteract: 0
-  hasClue: 0
-  Player: {fileID: 0}
-  door: {fileID: 148171477}
-  keyCard: {fileID: 210176049}
-  weapon: {fileID: 1122801880}
-  file: {fileID: 2020422636}
-  doorItem: {fileID: 0}
-  keyCardItem: {fileID: 0}
-  weaponItem: {fileID: 0}
-  fileItem: {fileID: 0}
-  anim: {fileID: 0}
 --- !u!114 &2020422639
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9691,6 +9650,10 @@ PrefabInstance:
       propertyPath: Player
       value: 
       objectReference: {fileID: 9119400485378186794}
+    - target: {fileID: 2020422638, guid: ac1c3c09f32f20540a0ccea0784a0b68, type: 3}
+      propertyPath: fileItem
+      value: 
+      objectReference: {fileID: 2020422639}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ac1c3c09f32f20540a0ccea0784a0b68, type: 3}
 --- !u!1001 &2126581763
