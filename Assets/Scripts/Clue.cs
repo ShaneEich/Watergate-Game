@@ -38,5 +38,14 @@ public class Clue : MonoBehaviour
                 onTrigger = false;
             }
         }
+        else
+        {
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                noteText.text = "";
+                noteCanvas.SetActive(false);
+                onTrigger = false;
+            }
+        }
     }
 }
