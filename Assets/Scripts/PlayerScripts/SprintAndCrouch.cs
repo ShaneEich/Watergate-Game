@@ -6,6 +6,8 @@ public class SprintAndCrouch : MonoBehaviour
 {
     private PlayerMotor playerMotor;
 
+    private CharacterController character_Controller;
+
     public float sprint_Speed = 10f;
     public float move_Speed = 5f;
     public float crouch_Speed = 2f;
@@ -36,7 +38,7 @@ public class SprintAndCrouch : MonoBehaviour
         playerMotor = GetComponent<PlayerMotor>();
         look_Root = transform.GetChild(0);
         player_Footsteps = GetComponentInChildren<FootSteps>();
-
+        character_Controller = GetComponent<CharacterController>();
         player_Stats = GetComponent<PlayerStats>();
 
     }
@@ -77,7 +79,7 @@ public class SprintAndCrouch : MonoBehaviour
             
         }
 
-        if(Input.GetKey(KeyCode.LeftShift) && !is_Crouching)
+        if(Input.GetKey(KeyCode.LeftShift) && !is_Crouching && character_Controller.velocity.sqrMagnitude > 0)
         {
             sprint_Value -= sprint_Threshold * Time.deltaTime;
 
