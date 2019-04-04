@@ -162,7 +162,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dffcc698dfcaf3748ac1a38c392f8fa5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  icon: {fileID: 0}
+  icon: {fileID: 7262199388285796326}
 --- !u!1 &967457779802246552
 GameObject:
   m_ObjectHideFlags: 0
@@ -251,7 +251,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dffcc698dfcaf3748ac1a38c392f8fa5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  icon: {fileID: 0}
+  icon: {fileID: 9050481356204518312}
 --- !u!1 &967457779820407390
 GameObject:
   m_ObjectHideFlags: 0
@@ -340,7 +340,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dffcc698dfcaf3748ac1a38c392f8fa5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  icon: {fileID: 0}
+  icon: {fileID: 3101834774832015393}
 --- !u!1 &967457780302939798
 GameObject:
   m_ObjectHideFlags: 0
@@ -429,7 +429,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dffcc698dfcaf3748ac1a38c392f8fa5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  icon: {fileID: 0}
+  icon: {fileID: 6909306161096463717}
 --- !u!1 &967457780328251933
 GameObject:
   m_ObjectHideFlags: 0
@@ -518,7 +518,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dffcc698dfcaf3748ac1a38c392f8fa5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  icon: {fileID: 0}
+  icon: {fileID: 1170989925890025782}
 --- !u!1 &967457780397505325
 GameObject:
   m_ObjectHideFlags: 0
@@ -607,7 +607,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dffcc698dfcaf3748ac1a38c392f8fa5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  icon: {fileID: 0}
+  icon: {fileID: 6957432563677207711}
 --- !u!1 &967457780638865672
 GameObject:
   m_ObjectHideFlags: 0
@@ -756,7 +756,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dffcc698dfcaf3748ac1a38c392f8fa5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  icon: {fileID: 0}
+  icon: {fileID: 8248766650144097277}
 --- !u!1 &967457780691736104
 GameObject:
   m_ObjectHideFlags: 0
@@ -845,7 +845,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dffcc698dfcaf3748ac1a38c392f8fa5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  icon: {fileID: 0}
+  icon: {fileID: 1252847471553451777}
 --- !u!1 &967457780744458002
 GameObject:
   m_ObjectHideFlags: 0
@@ -934,7 +934,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dffcc698dfcaf3748ac1a38c392f8fa5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  icon: {fileID: 0}
+  icon: {fileID: 640504768066315963}
 --- !u!1 &967457780894046206
 GameObject:
   m_ObjectHideFlags: 0
@@ -1132,8 +1132,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -30861.826, y: 2058.1458}
-  m_SizeDelta: {x: 204, y: 493}
+  m_AnchoredPosition: {x: -30496.08, y: 2383.9492}
+  m_SizeDelta: {x: 245, y: 613}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &967457781108685356
 Canvas:
@@ -1207,7 +1207,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6eba077ea5bd3a24c86b5b5704fbbc15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventoryUI: {fileID: 967457781108685344}
+  inventoryUI: {fileID: 967457781529255081}
   itemsParent: {fileID: 4883825593313677348}
 --- !u!1 &967457781448151755
 GameObject:
@@ -1297,7 +1297,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dffcc698dfcaf3748ac1a38c392f8fa5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  icon: {fileID: 0}
+  icon: {fileID: 915394077914062685}
 --- !u!1 &967457781529255081
 GameObject:
   m_ObjectHideFlags: 0
@@ -1462,7 +1462,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dffcc698dfcaf3748ac1a38c392f8fa5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  icon: {fileID: 0}
+  icon: {fileID: 7567710214979779981}
 --- !u!1 &967457781589188039
 GameObject:
   m_ObjectHideFlags: 0
@@ -1551,7 +1551,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dffcc698dfcaf3748ac1a38c392f8fa5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  icon: {fileID: 0}
+  icon: {fileID: 1175168209863866194}
 --- !u!1 &1331422645604760514
 GameObject:
   m_ObjectHideFlags: 0
