@@ -1065,11 +1065,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5449557683792587317, guid: a09ea22e7b4e4ac438262eaae4dc695f,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.16
-      objectReference: {fileID: 0}
     - target: {fileID: 8241647255842409218, guid: a09ea22e7b4e4ac438262eaae4dc695f,
         type: 3}
       propertyPath: stamina_Stats
