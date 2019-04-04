@@ -16,14 +16,19 @@ public class ObjectInteract : MonoBehaviour {
     public bool hasClue;
 
 
-    //create game objects used in this script
+    //create game objects and items used in this script
     public GameObject Player;
     public GameObject door;
     public GameObject keyCard;
     public GameObject weapon;
     public GameObject file;
+
+    public Item doorItem;
+    public Item keyCardItem;
+    public Item weaponItem;
+    public Item fileItem;
+
     public Animator anim;
-    private Item item;   // Item to put in the inventory if picked up
 
 
     private void Start()
@@ -59,7 +64,7 @@ public class ObjectInteract : MonoBehaviour {
     {
         keyCard.SetActive(false);
         hasKey = true;
-        Inventory.instance.Add(this.item);	// Add to inventory
+        Inventory.instance.Add(keyCardItem);	// Add to inventory
     }
 
     //pick up the weapon
@@ -67,7 +72,7 @@ public class ObjectInteract : MonoBehaviour {
     {
         weapon.SetActive(false);
         hasWeapon = true;
-        Inventory.instance.Add(this.item);	// Add to inventory
+        Inventory.instance.Add(weaponItem);	// Add to inventory
     }
 
     //pick up the file
@@ -75,7 +80,7 @@ public class ObjectInteract : MonoBehaviour {
     {
         file.SetActive(false);
         hasFile = true;
-        Inventory.instance.Add(this.item);	// Add to inventory
+        Inventory.instance.Add(fileItem);	// Add to inventory
     }
 
 
