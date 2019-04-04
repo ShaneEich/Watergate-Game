@@ -62,7 +62,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 823
+    m_Bits: 2871
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -358,6 +358,50 @@ MonoBehaviour:
   volume_Min: 0
   volume_Max: 0
   step_Distance: 0
+--- !u!1 &7629561661376086809
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1512585817574122525}
+  - component: {fileID: 1758234032115602071}
+  m_Layer: 0
+  m_Name: HitCheck
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1512585817574122525
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7629561661376086809}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.189, z: 0.879}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2766625625087529611}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1758234032115602071
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7629561661376086809}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 0.59748036}
+  m_Center: {x: 0, y: 0, z: -0.20125982}
 --- !u!1 &9119400485378186794
 GameObject:
   m_ObjectHideFlags: 0
@@ -371,6 +415,7 @@ GameObject:
   - component: {fileID: 9119400485378186795}
   - component: {fileID: 4740950891302636541}
   - component: {fileID: 8241647255842409218}
+  - component: {fileID: 46711672391178345}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -391,6 +436,7 @@ Transform:
   m_Children:
   - {fileID: 4435863917606906052}
   - {fileID: 5449557683792587317}
+  - {fileID: 1512585817574122525}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -405,11 +451,11 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 1.8
-  m_Radius: 0.35
+  m_Height: 2.5
+  m_Radius: 0.4
   m_SlopeLimit: 55
   m_StepOffset: 0.2
-  m_SkinWidth: 0.08
+  m_SkinWidth: 0.1
   m_MinMoveDistance: 0
   m_Center: {x: 0, y: 1, z: 0}
 --- !u!114 &9119400485378186795
@@ -454,3 +500,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stamina_Stats: {fileID: 0}
+--- !u!114 &46711672391178345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9119400485378186794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 323449ed776b32d479e39ee1896e95c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentInterObj: {fileID: 0}
+  currentEnemy: {fileID: 0}
+  currentInterObjScript: {fileID: 0}
+  currentCombatScript: {fileID: 0}
+  keyCard: {fileID: 0}
+  keyCards: []
+  weapon: {fileID: 0}
+  weapons: []
+  file: {fileID: 0}
+  files: []
