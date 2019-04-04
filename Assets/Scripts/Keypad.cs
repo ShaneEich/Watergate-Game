@@ -10,6 +10,7 @@ public class Keypad : MonoBehaviour
     public bool doorOpened;
     public bool keypadScreen;
     public Transform hinge;
+    private int fails = 0;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -25,6 +26,15 @@ public class Keypad : MonoBehaviour
 
     private void Update()
     {
+        if(input.Length == 4 && input != currentPassword)
+        {
+            fails += 1;
+            input = "";
+        }
+        if(fails >= 3)
+        {
+            //you failed big time kid
+        }
         if(input == currentPassword)
         {
             doorOpened = true;
