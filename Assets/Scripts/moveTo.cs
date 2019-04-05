@@ -26,7 +26,7 @@ public class moveTo : MonoBehaviour {
         agent.autoBraking = false; // allows for continous movement from agent
         //agent.updateRotation = false;
         //agent.updatePosition = true;
-        target = PlayerManager.instance.player.transform;
+        target = PlayerManager.instance.Player.transform;
         GoToNextPoint();
 
     }

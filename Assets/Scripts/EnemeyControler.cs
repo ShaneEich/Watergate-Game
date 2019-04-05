@@ -8,8 +8,8 @@ public class EnemeyControler : MonoBehaviour
 {
     public float lookRadius = 10f; //radius around enemy AI 
     int count = 0;
-    Transform target;
-    Transform goal;
+    public Transform target;
+    public Transform goal;
     // position of player
     public Transform[] points;
     private int destPoint = 0;
@@ -19,7 +19,7 @@ public class EnemeyControler : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        target = PlayerManager.instance.player.transform;
+        
         agent = GetComponent<NavMeshAgent>(); // sets agent to this gameobject navemesh
         agent.autoBraking = false;
         GotoNextPoint();
