@@ -2025,7 +2025,7 @@ MonoBehaviour:
   hasFile: 0
   canInteract: 0
   hasClue: 0
-  Player: {fileID: 0}
+  Player: {fileID: 655743648}
   door: {fileID: 628019675}
   keyCard: {fileID: 367331079}
   weapon: {fileID: 0}
@@ -3515,6 +3515,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4004295574303946, guid: 7b870083fc425f540acc5bec9359bbbe,
     type: 3}
   m_PrefabInstance: {fileID: 639038437}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &655743648 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9119400485378186794, guid: a09ea22e7b4e4ac438262eaae4dc695f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1640177615}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &687050239 stripped
 Transform:
@@ -7417,6 +7423,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 46711672391178345, guid: a09ea22e7b4e4ac438262eaae4dc695f,
         type: 3}
+      propertyPath: keyCards.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 46711672391178345, guid: a09ea22e7b4e4ac438262eaae4dc695f,
+        type: 3}
       propertyPath: keyCard
       value: 
       objectReference: {fileID: 367331079}
@@ -7434,6 +7445,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_BackGroundColor.b
       value: 0.4339623
+      objectReference: {fileID: 0}
+    - target: {fileID: 401731146960910674, guid: a09ea22e7b4e4ac438262eaae4dc695f,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 401731146960910674, guid: a09ea22e7b4e4ac438262eaae4dc695f,
         type: 3}
