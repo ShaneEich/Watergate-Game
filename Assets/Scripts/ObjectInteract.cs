@@ -35,7 +35,7 @@ public class ObjectInteract : MonoBehaviour {
     {
         anim = GetComponent<Animator>();
         
-        Debug.Log("animation loaded");
+        
     }
     public void CanInteract()
     {

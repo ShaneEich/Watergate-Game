@@ -7,14 +7,14 @@ using UnityEngine.SceneManagement;
 public class EnemeyControler : MonoBehaviour
 {
     public float lookRadius = 10f; //radius around enemy AI 
-    int count = 0;
+    
     public Transform target;
-    public Transform goal;
+    public GameObject Player;
     // position of player
     public Transform[] points;
     private int destPoint = 0;
     public NavMeshAgent agent;
-
+    public Collider other;
 
     // Start is called before the first frame update
     void Start()
@@ -50,8 +50,7 @@ public class EnemeyControler : MonoBehaviour
             if (distance <= agent.stoppingDistance)
             {
                 Debug.Log("Close to point");
-                Scene scene = SceneManager.GetActiveScene();
-                SceneManager.LoadScene(scene.name);
+                
                 FaceTarget();
                 Debug.Log("Go to next point");
             }
@@ -71,7 +70,14 @@ public class EnemeyControler : MonoBehaviour
         transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * 5f);
     }
 
-  
+    public void OnTriggerEnter(Collider Other)
+    {
+        if (Player.name == "Player")
+        {
+            Scene scene = SceneManager.GetActiveScene();
+            SceneManager.LoadScene(scene.name);
+        }
+    }
 
 
     void OnDrawGizmosSelected()

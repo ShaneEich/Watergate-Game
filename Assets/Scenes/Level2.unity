@@ -2653,7 +2653,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 476460532}
-  - component: {fileID: 476460531}
   - component: {fileID: 476460530}
   - component: {fileID: 476460529}
   - component: {fileID: 476460528}
@@ -2694,9 +2693,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 010395c97e2c7754790854ad588662ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lookRadius: 2.4
+  lookRadius: 2.24
   target: {fileID: 9119400485378186800}
-  goal: {fileID: 0}
+  Player: {fileID: 9119400485378186794}
   points:
   - {fileID: 1309384016}
   - {fileID: 721862163}
@@ -2706,6 +2705,7 @@ MonoBehaviour:
   - {fileID: 1289444654}
   - {fileID: 1388639574}
   agent: {fileID: 0}
+  other: {fileID: 0}
 --- !u!54 &476460529
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2736,28 +2736,14 @@ NavMeshAgent:
   m_Acceleration: 20
   avoidancePriority: 50
   m_AngularSpeed: 120
-  m_StoppingDistance: 0.25
+  m_StoppingDistance: 0.1
   m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
+  m_AutoBraking: 0
   m_AutoRepath: 1
   m_Height: 2.18
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!136 &476460531
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 476460526}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  m_Radius: 0.37158638
-  m_Height: 2.3396673
-  m_Direction: 1
-  m_Center: {x: 3.4434341e-10, y: 1.1808014, z: 0.051586386}
 --- !u!4 &476460532
 Transform:
   m_ObjectHideFlags: 0
@@ -2772,6 +2758,7 @@ Transform:
   - {fileID: 1768994025}
   - {fileID: 1740591836}
   - {fileID: 1185399131}
+  - {fileID: 986784313}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: -82.464005, z: 0}
@@ -5376,6 +5363,51 @@ MonoBehaviour:
   name: Intel
   icon: {fileID: 21300000, guid: a651bddea8bf77c448157273631b65be, type: 3}
   showInInventory: 1
+--- !u!1 &986784312
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 986784313}
+  - component: {fileID: 986784314}
+  m_Layer: 0
+  m_Name: Skeltonbody
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &986784313
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 986784312}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.3, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 476460532}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &986784314
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 986784312}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.47697043
+  m_Height: 2.1856222
+  m_Direction: 1
+  m_Center: {x: 0.023029566, y: -0.09281111, z: 2.4208235e-10}
 --- !u!4 &1012902865 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4222669995807660, guid: c9e8c92ac908907499522e06386a357a,
