@@ -54,7 +54,7 @@ public class ObjectInteract : MonoBehaviour {
     //close the elevator
     public void close()
     {
-        anim.Play("ElevatorClose");
+        //anim.Play("ElevatorClose");
        
         door.SetActive(true);
     }
