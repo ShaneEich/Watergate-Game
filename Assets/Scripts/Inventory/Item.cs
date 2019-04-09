@@ -3,7 +3,7 @@ using UnityEngine;
 /* The base item class. All items should derive from this. */
 
 [CreateAssetMenu(fileName = "New Item", menuName = "Inventory/Item")]
-public class Item : MonoBehaviour
+public class Item : ScriptableObject
 {
 
 	new public string name = "New Item";	// Name of the item
