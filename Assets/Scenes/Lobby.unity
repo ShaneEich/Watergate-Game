@@ -1310,6 +1310,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Piano
       objectReference: {fileID: 0}
+    - target: {fileID: 1750207477302370, guid: bc46577c91c44d049a123ec1d126cb12, type: 3}
+      propertyPath: m_TagString
+      value: Interactable Object
+      objectReference: {fileID: 0}
     - target: {fileID: 4272926786094392, guid: bc46577c91c44d049a123ec1d126cb12, type: 3}
       propertyPath: m_LocalPosition.x
       value: 10.499807
@@ -1379,6 +1383,37 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 12.8224535, y: 9.118639, z: 11.5156}
   m_Center: {x: -0.3564393, y: -1.156789, z: 0.57844996}
+--- !u!114 &281936044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 281936042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d44668dad10fb24ab615b5485a8e78a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  openDoor: 0
+  closeDoor: 0
+  hasKey: 0
+  hasWeapon: 0
+  hasFile: 0
+  canInteract: 0
+  hasClue: 0
+  isPiano: 0
+  Player: {fileID: 0}
+  door: {fileID: 0}
+  keyCard: {fileID: 0}
+  weapon: {fileID: 0}
+  file: {fileID: 0}
+  piano: {fileID: 281936042}
+  doorItem: {fileID: 0}
+  keyCardItem: {fileID: 0}
+  weaponItem: {fileID: 0}
+  fileItem: {fileID: 0}
+  anim: {fileID: 0}
 --- !u!1 &291496088
 GameObject:
   m_ObjectHideFlags: 0
@@ -2025,11 +2060,13 @@ MonoBehaviour:
   hasFile: 0
   canInteract: 0
   hasClue: 0
+  isPiano: 0
   Player: {fileID: 655743648}
   door: {fileID: 628019675}
   keyCard: {fileID: 367331079}
   weapon: {fileID: 0}
   file: {fileID: 0}
+  piano: {fileID: 0}
   doorItem: {fileID: 0}
   keyCardItem: {fileID: 367331085}
   weaponItem: {fileID: 0}

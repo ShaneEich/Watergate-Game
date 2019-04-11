@@ -14,6 +14,7 @@ public class ObjectInteract : MonoBehaviour {
     public bool hasFile;
     public bool canInteract;
     public bool hasClue;
+    public bool isPiano;
 
 
     //create game objects and items used in this script
@@ -22,6 +23,7 @@ public class ObjectInteract : MonoBehaviour {
     public GameObject keyCard;
     public GameObject weapon;
     public GameObject file;
+    public GameObject piano;
 
     public Item doorItem;
     public Item keyCardItem;
@@ -39,6 +41,7 @@ public class ObjectInteract : MonoBehaviour {
     }
     public void CanInteract()
     {
+        //need to add an on screen pop up for all interactable objects
         Debug.Log("Press E to Interact.");
     }
 
@@ -83,6 +86,29 @@ public class ObjectInteract : MonoBehaviour {
         Inventory.instance.Add(fileItem);	// Add to inventory
     }
 
+    public void playPiano()
+    {
+        isPiano = true;
+        //make a random number to choose which song plays
+        int randomNum = UnityEngine.Random.Range(0,4);
+        Debug.Log(randomNum);
 
+        //make a switch statement to play the song corresponding to the random number
+        switch (randomNum)
+        {
+            case 1:
+                Debug.Log("A");
+                break;
+            case 2:
+                Debug.Log("B");
+                break;
+            case 3:
+                Debug.Log("C");
+                break;
+            default:
+                Debug.Log("Default");
+                break;
+        }
+    }
 
 }

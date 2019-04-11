@@ -66,12 +66,11 @@ public class PlayerInteract : MonoBehaviour {
                 Scene scene = SceneManager.GetActiveScene();
                 SceneManager.LoadScene(scene.buildIndex + 1);
             }
-            /* if(currentCombatScript.isGuard && weapons.Count > 0)
-          {
-              currentCombatScript.KOGuard();
-              weapons.Remove(weapon);
-              Debug.Log("Guard Knocked Out");
-          }*/
+
+            if(currentInterObjScript.isPiano)
+            {
+                currentInterObjScript.playPiano();
+            }
 
         }
         if (Input.GetButtonDown("Attack") && currentEnemy)
