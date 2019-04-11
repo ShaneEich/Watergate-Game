@@ -89,6 +89,7 @@ public class ObjectInteract : MonoBehaviour {
     public void playPiano()
     {
         isPiano = true;
+
         //make a random number to choose which song plays
         int randomNum = UnityEngine.Random.Range(0,4);
         Debug.Log(randomNum);
@@ -97,13 +98,13 @@ public class ObjectInteract : MonoBehaviour {
         switch (randomNum)
         {
             case 1:
-                Debug.Log("A");
+                Debug.Log("Playing Beauty");
                 break;
             case 2:
-                Debug.Log("B");
+                Debug.Log("Playing Cloud Chamber");
                 break;
             case 3:
-                Debug.Log("C");
+                Debug.Log("Playing Strange Dream");
                 break;
             default:
                 Debug.Log("Default");
