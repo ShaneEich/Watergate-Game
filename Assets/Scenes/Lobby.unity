@@ -1414,6 +1414,10 @@ MonoBehaviour:
   weaponItem: {fileID: 0}
   fileItem: {fileID: 0}
   anim: {fileID: 0}
+  audio: {fileID: 1827514977}
+  Beauty: {fileID: 8300000, guid: 325df04cd28ee7c498ebeaffc384b22e, type: 3}
+  CloudChamber: {fileID: 8300000, guid: 83ed7e3eafa9d7449b52a82d99db78a0, type: 3}
+  StrangeDream: {fileID: 8300000, guid: f9a131738e35be349b2391f32d75d97c, type: 3}
 --- !u!65 &281936045
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2085,6 +2089,10 @@ MonoBehaviour:
   weaponItem: {fileID: 0}
   fileItem: {fileID: 0}
   anim: {fileID: 0}
+  audio: {fileID: 0}
+  Beauty: {fileID: 0}
+  CloudChamber: {fileID: 0}
+  StrangeDream: {fileID: 0}
 --- !u!114 &367331085
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8319,6 +8327,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4353203423545872, guid: 250b43e44a36bde48bf69e8609b2e80c,
     type: 3}
   m_PrefabInstance: {fileID: 1816911909}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &1827514977 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 4479402766937465846, guid: fd5c6d601d38f3645bd9b30899b99143,
+    type: 3}
+  m_PrefabInstance: {fileID: 759733221}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1835660812
 GameObject:

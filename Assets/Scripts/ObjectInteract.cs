@@ -31,14 +31,17 @@ public class ObjectInteract : MonoBehaviour {
     public Item fileItem;
 
     public Animator anim;
-
+    public AudioSource audio;
+    public AudioClip Beauty;
+    public AudioClip CloudChamber;
+    public AudioClip StrangeDream;
 
     private void Start()
     {
         anim = GetComponent<Animator>();
-        
-        
+        audio = audio.GetComponent<AudioSource>();
     }
+
     public void CanInteract()
     {
         //need to add an on screen pop up for all interactable objects
@@ -91,7 +94,7 @@ public class ObjectInteract : MonoBehaviour {
         isPiano = true;
 
         //make a random number to choose which song plays
-        int randomNum = UnityEngine.Random.Range(0,4);
+        int randomNum = UnityEngine.Random.Range(0,3);
         Debug.Log(randomNum);
 
         //make a switch statement to play the song corresponding to the random number
@@ -99,12 +102,15 @@ public class ObjectInteract : MonoBehaviour {
         {
             case 1:
                 Debug.Log("Playing Beauty");
+                audio.clip = Beauty;
                 break;
             case 2:
                 Debug.Log("Playing Cloud Chamber");
+                audio.clip = CloudChamber;
                 break;
             case 3:
                 Debug.Log("Playing Strange Dream");
+                audio.clip = StrangeDream;
                 break;
             default:
                 Debug.Log("Default");
