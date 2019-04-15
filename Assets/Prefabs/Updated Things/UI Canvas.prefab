@@ -35,7 +35,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 12.4, y: 125}
-  m_SizeDelta: {x: 25, y: 150}
+  m_SizeDelta: {x: 11.4, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6617161703858997922
 CanvasRenderer:
@@ -150,7 +150,7 @@ MonoBehaviour:
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
-  m_ScreenMatchMode: 0
+  m_ScreenMatchMode: 2
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
@@ -274,7 +274,7 @@ RectTransform:
   m_GameObject: {fileID: 6617161704971020667}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.8, y: 1, z: 1}
   m_Children:
   - {fileID: 6617161703858997920}
   - {fileID: 6617161704424384125}

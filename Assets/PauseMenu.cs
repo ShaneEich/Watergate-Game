@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class PauseMenu : MonoBehaviour
 {
-
     public static bool GameIsPaused = false; //Check if game is currently paused or not
     Scene ActiveScene;
     public GameObject pauseMenuUI;
@@ -28,13 +27,19 @@ public class PauseMenu : MonoBehaviour
 
     public void Resume()
     {
+        
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         GameIsPaused = false;
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+
     }
-    void Pause()
+    public void Pause()
     {
+        
         pauseMenuUI.SetActive(true);
+        Cursor.visible = true;
         Time.timeScale = 0f;
         GameIsPaused = true;
     }
@@ -43,10 +48,12 @@ public class PauseMenu : MonoBehaviour
     {
         ActiveScene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(ActiveScene.name);
+        Time.timeScale = 1f;
     }
 
     public void Quit()
     {
         SceneManager.LoadScene("Menu");
+        Time.timeScale = 1f;
     }
 }

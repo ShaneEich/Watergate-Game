@@ -38,23 +38,34 @@ public class MouseCam : MonoBehaviour
     private float current_Roll_Angle;
 
     private int last_Look_Frame;
-
+    public PauseMenu pMenu;
     // Start is called before the first frame update
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
-
+        //PauseMenu pMenu;
     }
 
     // Update is called once per frame
     void Update()
     {
-        LockAndUnlockCursor();
+        if (pMenu.pauseMenuUI.activeSelf){
 
-        if(Cursor.lockState == CursorLockMode.Locked)
-        {
-            LookAround();
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
         }
+        else
+        {
+            LockAndUnlockCursor();
+
+            if (Cursor.lockState == CursorLockMode.Locked)
+            {
+                LookAround();
+            }
+
+        }
+
+        
     }
 
     void LockAndUnlockCursor()
