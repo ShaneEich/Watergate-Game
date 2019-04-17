@@ -2257,7 +2257,7 @@ MonoBehaviour:
   weaponItem: {fileID: 0}
   fileItem: {fileID: 0}
   anim: {fileID: 0}
-  audio: {fileID: 0}
+  audio: {fileID: 1827514977}
   Beauty: {fileID: 0}
   CloudChamber: {fileID: 0}
   StrangeDream: {fileID: 0}
@@ -3647,6 +3647,11 @@ PrefabInstance:
       propertyPath: openDoor
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114294728961657556, guid: 91091ecc0f682fb40a117a02645dd490,
+        type: 3}
+      propertyPath: audio
+      value: 
+      objectReference: {fileID: 1827514977}
     - target: {fileID: 114255339580479586, guid: 91091ecc0f682fb40a117a02645dd490,
         type: 3}
       propertyPath: Player
@@ -3657,6 +3662,11 @@ PrefabInstance:
       propertyPath: keyCard
       value: 
       objectReference: {fileID: 367331079}
+    - target: {fileID: 114255339580479586, guid: 91091ecc0f682fb40a117a02645dd490,
+        type: 3}
+      propertyPath: audio
+      value: 
+      objectReference: {fileID: 1827514977}
     - target: {fileID: 23046544996600426, guid: 91091ecc0f682fb40a117a02645dd490,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
