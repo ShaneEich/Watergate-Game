@@ -39,7 +39,7 @@ public class ObjectInteract : MonoBehaviour {
     private void Start()
     {
         anim = GetComponent<Animator>();
-        audio = audio.GetComponent<AudioSource>();
+        
     }
 
     public void CanInteract()
@@ -91,6 +91,7 @@ public class ObjectInteract : MonoBehaviour {
 
     public void playPiano()
     {
+        audio = audio.GetComponent<AudioSource>();
         isPiano = true;
 
         //make a random number to choose which song plays
