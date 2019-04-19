@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Keypad : MonoBehaviour
 {
@@ -24,6 +25,36 @@ public class Keypad : MonoBehaviour
         input = "";
     }
 
+    private void Start()
+    {
+        Clue[] scripts = FindObjectsOfType<Clue>();
+        int num1, num2, num3, num4;
+        num1 = Random.Range(0, 10);
+        num2 = Random.Range(0, 10);
+        num3 = Random.Range(0, 10);
+        num4 = Random.Range(0, 10);
+        currentPassword = num1.ToString() + num2.ToString() + num3.ToString() + num4.ToString();
+        for (int i = 0; i < scripts.Length; i++)
+        {
+            if(i == 0)
+            {
+                scripts[i].clueText = num1.ToString() + " _ _ _";
+            }
+            else if (i == 1)
+            {
+                scripts[i].clueText = "_ " + num2.ToString() + " _ _";
+            }
+            else if (i == 2)
+            {
+                scripts[i].clueText = "_ _ " + num3.ToString() + " _";
+            }
+            else if (i == 3)
+            {
+                scripts[i].clueText = "_ _ _ " + num4.ToString();
+            }
+        }
+    }
+
     private void Update()
     {
         if(input.Length == 4 && input != currentPassword)
@@ -33,7 +64,8 @@ public class Keypad : MonoBehaviour
         }
         if(fails >= 3)
         {
-            //you failed big time kid
+            Scene s = SceneManager.GetActiveScene();
+            SceneManager.LoadScene(s.name);
         }
         if(input == currentPassword)
         {
