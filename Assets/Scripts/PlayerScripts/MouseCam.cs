@@ -43,6 +43,7 @@ public class MouseCam : MonoBehaviour
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
         //PauseMenu pMenu;
     }
 
@@ -70,7 +71,7 @@ public class MouseCam : MonoBehaviour
 
     void LockAndUnlockCursor()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.LeftControl))
         {
             if(Cursor.lockState == CursorLockMode.Locked)
             {
