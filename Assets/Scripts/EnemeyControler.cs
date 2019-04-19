@@ -72,7 +72,7 @@ public class EnemeyControler : MonoBehaviour
 
     public void OnTriggerEnter(Collider Other)
     {
-        if (Player.name == "Player")
+        if (Other.gameObject == Player)
         {
             Scene scene = SceneManager.GetActiveScene();
             SceneManager.LoadScene(scene.name);
