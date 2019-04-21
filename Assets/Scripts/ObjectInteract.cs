@@ -95,7 +95,7 @@ public class ObjectInteract : MonoBehaviour {
         isPiano = true;
 
         //make a random number to choose which song plays
-        int randomNum = UnityEngine.Random.Range(0,3);
+        int randomNum = UnityEngine.Random.Range(0,4);
         Debug.Log(randomNum);
 
         //make a switch statement to play the song corresponding to the random number

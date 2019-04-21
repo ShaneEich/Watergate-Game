@@ -3,7 +3,22 @@ guid: 4d44668dad10fb24ab615b5485a8e78a
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - Player: {instanceID: 0}
+  - door: {instanceID: 0}
+  - keyCard: {instanceID: 0}
+  - weapon: {instanceID: 0}
+  - file: {instanceID: 0}
+  - piano: {instanceID: 0}
+  - doorItem: {instanceID: 0}
+  - keyCardItem: {instanceID: 0}
+  - weaponItem: {instanceID: 0}
+  - fileItem: {instanceID: 0}
+  - anim: {instanceID: 0}
+  - audio: {instanceID: 0}
+  - Beauty: {fileID: 8300000, guid: 325df04cd28ee7c498ebeaffc384b22e, type: 3}
+  - CloudChamber: {fileID: 8300000, guid: 83ed7e3eafa9d7449b52a82d99db78a0, type: 3}
+  - StrangeDream: {fileID: 8300000, guid: f9a131738e35be349b2391f32d75d97c, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

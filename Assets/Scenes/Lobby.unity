@@ -4144,7 +4144,7 @@ PrefabInstance:
     - target: {fileID: 4479402766937465846, guid: fd5c6d601d38f3645bd9b30899b99143,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fd5c6d601d38f3645bd9b30899b99143, type: 3}
@@ -7784,26 +7784,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7262701770897419066, guid: a09ea22e7b4e4ac438262eaae4dc695f,
-        type: 3}
-      propertyPath: m_BackGroundColor.r
-      value: 0.4339623
-      objectReference: {fileID: 0}
-    - target: {fileID: 7262701770897419066, guid: a09ea22e7b4e4ac438262eaae4dc695f,
-        type: 3}
-      propertyPath: m_BackGroundColor.g
-      value: 0.4339623
-      objectReference: {fileID: 0}
-    - target: {fileID: 7262701770897419066, guid: a09ea22e7b4e4ac438262eaae4dc695f,
-        type: 3}
-      propertyPath: m_BackGroundColor.b
-      value: 0.4339623
-      objectReference: {fileID: 0}
-    - target: {fileID: 401731148364531753, guid: a09ea22e7b4e4ac438262eaae4dc695f,
-        type: 3}
-      propertyPath: m_RaycastTarget
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4404736926567288460, guid: a09ea22e7b4e4ac438262eaae4dc695f,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -7878,6 +7858,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 0.00000037579
+      objectReference: {fileID: 0}
+    - target: {fileID: 7262701770897419066, guid: a09ea22e7b4e4ac438262eaae4dc695f,
+        type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 0.4339623
+      objectReference: {fileID: 0}
+    - target: {fileID: 7262701770897419066, guid: a09ea22e7b4e4ac438262eaae4dc695f,
+        type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 0.4339623
+      objectReference: {fileID: 0}
+    - target: {fileID: 7262701770897419066, guid: a09ea22e7b4e4ac438262eaae4dc695f,
+        type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 0.4339623
+      objectReference: {fileID: 0}
+    - target: {fileID: 401731148364531753, guid: a09ea22e7b4e4ac438262eaae4dc695f,
+        type: 3}
+      propertyPath: m_RaycastTarget
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a09ea22e7b4e4ac438262eaae4dc695f, type: 3}
