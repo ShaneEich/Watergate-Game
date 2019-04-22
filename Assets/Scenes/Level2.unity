@@ -12095,6 +12095,16 @@ PrefabInstance:
       propertyPath: points.Array.data[6]
       value: 
       objectReference: {fileID: 1388639574}
+    - target: {fileID: 4136886870918321217, guid: f004de4d2ba7a8d47ae1c8f1a9719579,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.98
+      objectReference: {fileID: 0}
+    - target: {fileID: 4136886870918321218, guid: f004de4d2ba7a8d47ae1c8f1a9719579,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4124225285537253014, guid: f004de4d2ba7a8d47ae1c8f1a9719579,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
