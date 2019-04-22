@@ -8072,6 +8072,11 @@ PrefabInstance:
       propertyPath: file
       value: 
       objectReference: {fileID: 2020422636}
+    - target: {fileID: 46711672391178345, guid: a09ea22e7b4e4ac438262eaae4dc695f,
+        type: 3}
+      propertyPath: weaponView
+      value: 
+      objectReference: {fileID: 2078443159}
     - target: {fileID: 401731146960910674, guid: a09ea22e7b4e4ac438262eaae4dc695f,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -8196,6 +8201,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a09ea22e7b4e4ac438262eaae4dc695f, type: 3}
+--- !u!1 &2078443159 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1463367636327527, guid: a09ea22e7b4e4ac438262eaae4dc695f,
+    type: 3}
+  m_PrefabInstance: {fileID: 2078443158}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2090203904 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4723248023394784, guid: 0a3ffc1570929fa40810cdc5580b36cc,

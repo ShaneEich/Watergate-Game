@@ -21,6 +21,8 @@ public class PlayerInteract : MonoBehaviour {
     public GameObject file;
     public List<GameObject> files;
 
+    public GameObject weaponView;
+
     //interact with the elevator, weapons, files, and key cards
     void Update()
     {
@@ -36,6 +38,7 @@ public class PlayerInteract : MonoBehaviour {
 
             if (currentInterObjScript.hasWeapon)
             {
+                weaponView.SetActive(true);
                 weapons.Add(weapon);
                 currentInterObjScript.pickUpWeapon();
                 currentInterObj = null;
@@ -80,6 +83,7 @@ public class PlayerInteract : MonoBehaviour {
                 currentEnemy.SetActive(false);
                 weapons.Remove(weapon);
                 Debug.Log("Guard Knocked Out");
+                weaponView.SetActive(false);
             }else if(weapons.Count <= 0)
             {
                 Debug.Log("No weapons available.");
