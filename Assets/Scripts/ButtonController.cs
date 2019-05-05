@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 
-public enum FUNC {START, HOWTO, QUIT}
+public enum FUNC {START, HOWTO, QUIT, CREDITS, MAINMENU }
 public class ButtonController : MonoBehaviour
 {
     public FUNC state;
@@ -21,6 +21,14 @@ public class ButtonController : MonoBehaviour
         else if (state == FUNC.QUIT)
         {
             Application.Quit();
+        }
+        else if (state == FUNC.CREDITS)
+        {
+            SceneManager.LoadScene("Credits");
+        }
+        else if (state == FUNC.MAINMENU)
+        {
+            SceneManager.LoadScene("Menu");
         }
     }
 }
