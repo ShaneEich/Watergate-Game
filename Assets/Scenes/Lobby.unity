@@ -1655,7 +1655,7 @@ MonoBehaviour:
   weaponItem: {fileID: 0}
   fileItem: {fileID: 0}
   anim: {fileID: 0}
-  audio: {fileID: 1827514977}
+  audio: {fileID: 1582890675}
   Beauty: {fileID: 8300000, guid: 325df04cd28ee7c498ebeaffc384b22e, type: 3}
   CloudChamber: {fileID: 8300000, guid: 83ed7e3eafa9d7449b52a82d99db78a0, type: 3}
   StrangeDream: {fileID: 8300000, guid: f9a131738e35be349b2391f32d75d97c, type: 3}
@@ -7333,6 +7333,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1583254645}
   m_PrefabAsset: {fileID: 0}
+--- !u!82 &1582890675 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 7090866617166661382, guid: a09ea22e7b4e4ac438262eaae4dc695f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1640177615}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1583254645
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7788,26 +7794,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7262701770897419066, guid: a09ea22e7b4e4ac438262eaae4dc695f,
-        type: 3}
-      propertyPath: m_BackGroundColor.r
-      value: 0.4339623
-      objectReference: {fileID: 0}
-    - target: {fileID: 7262701770897419066, guid: a09ea22e7b4e4ac438262eaae4dc695f,
-        type: 3}
-      propertyPath: m_BackGroundColor.g
-      value: 0.4339623
-      objectReference: {fileID: 0}
-    - target: {fileID: 7262701770897419066, guid: a09ea22e7b4e4ac438262eaae4dc695f,
-        type: 3}
-      propertyPath: m_BackGroundColor.b
-      value: 0.4339623
-      objectReference: {fileID: 0}
-    - target: {fileID: 401731148364531753, guid: a09ea22e7b4e4ac438262eaae4dc695f,
-        type: 3}
-      propertyPath: m_RaycastTarget
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4404736926567288460, guid: a09ea22e7b4e4ac438262eaae4dc695f,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -7882,6 +7868,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 0.00000037579
+      objectReference: {fileID: 0}
+    - target: {fileID: 7262701770897419066, guid: a09ea22e7b4e4ac438262eaae4dc695f,
+        type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 0.4339623
+      objectReference: {fileID: 0}
+    - target: {fileID: 7262701770897419066, guid: a09ea22e7b4e4ac438262eaae4dc695f,
+        type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 0.4339623
+      objectReference: {fileID: 0}
+    - target: {fileID: 7262701770897419066, guid: a09ea22e7b4e4ac438262eaae4dc695f,
+        type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 0.4339623
+      objectReference: {fileID: 0}
+    - target: {fileID: 401731148364531753, guid: a09ea22e7b4e4ac438262eaae4dc695f,
+        type: 3}
+      propertyPath: m_RaycastTarget
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a09ea22e7b4e4ac438262eaae4dc695f, type: 3}
